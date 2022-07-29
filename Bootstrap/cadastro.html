@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./css/bootstrap.min.css" rel="stylesheet" >
+    <link href="style.css" rel="stylesheet">
+    <link href="style-cadastro.css" rel="stylesheet">
+</head>
+<title>CADASTRO</title>
+</head>
+<body >
+    <div class="teste">
+        <div class="col-md-8 col-sm-11" id="prin">
+            
+            <header>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-7 col-small-12">
+                            <div class="row logo1">
+                                <div class="img-logo"><img src="./logo.gif" class="img-fluid" alt=""></div>
+                                <div class="col-md-9 col-sm-6 logo"><h1 id="logotxt">Baroni</h1></div>
+                            </div>
+                            
+                        </div>
+                        
+                        <div class="col-md-5 col-sm-12">
+                            <ul class="nav justify-content-middle">
+                                <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#produtos">Produtos</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+                            </ul>
+                        </div>  
+                    </div>          
+                </div>
+            </header>
+            
+            <section id="cadastro">
+                <div class="container cadastro-container">
+                    <div class="row">
+                        <div class="col">
+                            <h1>Faça seu cadastro</h1>
+                            <p>Não perca as novidades e promoções</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        
+                        <div class="col-md-12 col-sm-12">
+                            <form class="form">
+                                
+                                <div class="form-row">
+                                    <div class="col">
+                                        <div class="input-camp">
+                                            <label for="nome">Nome</label>
+                                            <input class="form-control" type="text"name="nome" placeholder="Digite seu nome">
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="col">
+                                        <div class="input-camp">    
+                                            <label for="nome">Email</label>
+                                            <input class="form-control" type="text" name="email" placeholder="Digite seu email">
+                                        </div> 
+                                    </div>
+                                </div>
+                                
+                                <div class="row">
+                                    <div class="col">
+                                        <label for="endereco">Endereço</label>
+                                        <input placeholder="Endereço" id="endereco" name="endereco" type="text" class="form-control">
+                                    </div>
+                                </div> 
+                                
+                                <div class="row">
+                                    <div class="col">
+                                        <label for="cidade">Cidade</label>
+                                        <input type="text" id="cidade" name="cidade" class="form-control">
+                                    </div>
+                                    
+                                    <div class="col">
+                                        <label for="estado">Estado</label>
+                                        <select name="estado" id="estado" class="form-control">
+                                            <option value="">Selecione o estado</option>
+                                            <option value="sp">SP</option>
+                                            <option value="ce">CE</option>
+                                            <option value="pa">PA</option>
+                                            
+                                        </select>
+                                    </div>
+                                    <div class="col">
+                                        <label for="cep">CEP</label>
+                                        <input type="text" name="cep" id="cep" class="form-control">
+                                    </div>
+                                </div>
+                                
+                                <div class="row" >
+                                    <div class="col">    
+                                        <textarea class="form-control" placeholder="Tire suas duvidas aqui"  rows="5"></textarea>
+                                    </div>                            
+                                </div>
+                                
+                                <div class="row informs">
+                                    <div class="col-md-4 com-sm-8" >
+                                        <label for="promo">Aceito rebecer informações</label>                                
+                                    </div>
+                                    <div class="col-md-1 com-sm-1 form-check">
+                                        <input type="checkbox" name="promo" id="promo" class="checkbox">
+                                    </div>
+                                </div>
+                                
+                                <div class="row">
+                                    <div class="col-md-4 col-sm-6"><button type="submit" class="btn btn-lg btn-succes" > Realizar cadastro</div>
+                                        
+                                        <div class="col-md-3 col-md-6"><button type="button" class="btn btn-lg btn-succes" data-toggle="modal" data-target="#modal-cadastro">Cadastre-se</button>
+                                        </div>
+                                    </div>
+                                </form>
+                                
+                            </div>  
+                            
+                        </div>
+                    </div>
+                </section>
+                
+                <div class="modal fade" id="modal-cadastro" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Inscreva-me na lista</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                
+                                <h6>Preencha os campos para receber novidades</h6>
+                                <form action="" class="form-inline">
+                                    <div class="row" >
+                                        <div class="col">
+                                            <input type="text" class="form-control mb-2" placeholder="Nome" name="nome">
+                                        </div>
+                                        <div class="col">
+                                            <input type="email" placeholder="Nome" name="e-mail" class="form-control mb-2" required>
+                                        </div>
+                                        <div class="col">
+                                            <button class="btn btn-succes">Receber novidades</button>
+                                        </div>
+                                    </div>
+                                </form>
+                                
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+            </div>  
+        </div>   
+        
+        <div class="modal fade" id="modal-2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">NEGRONIS</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <table class="table table-striped table-hover">
+                            <thead >
+                                <tr>
+                                    <th>Quantidades</th>
+                                    <th>Valor</th>
+                                </tr>
+                                
+                            </thead>
+                            <tr>
+                                <td>10</td>
+                                <td>120R$</td>
+                            </tr>
+                            <tr>
+                                <td>20</td>
+                                <td>230R$</td>
+                            </tr>
+                            <tr>
+                                <td>30</td>
+                                <td>310R$</td>
+                            </tr>
+                            <tr>
+                                <td>40</td>
+                                <td>400R$</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </div> 
+    
+    <div class="modal fade" id="modal-3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">MARTINIS</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <table class="table table-striped table-hover">
+                        <thead >
+                            <tr>
+                                <th>Quantidades</th>
+                                <th>Valor</th>
+                            </tr>
+                            
+                        </thead>
+                        <tr>
+                            <td>10</td>
+                            <td>150R$</td>
+                        </tr>
+                        <tr>
+                            <td>20</td>
+                            <td>290R$</td>
+                        </tr>
+                        <tr>
+                            <td>30</td>
+                            <td>410R$</td>
+                        </tr>
+                        <tr>
+                            <td>40</td>
+                            <td>540R$</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div> 
+</div> 
+
+<script src="./js/jquery-3.6.0.min.js"></script>   
+<script src="./js/bootstrap.min.js"></script>
+
+</body>
+</html>

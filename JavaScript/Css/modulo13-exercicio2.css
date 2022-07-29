@@ -1,0 +1,45 @@
+body{
+    font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+    overflow-x: hidden;
+    background-color: #2f2f2f;
+    }
+  
+  .pa {
+    background-image: linear-gradient(150deg,#4f4f4f,#373737, #2f2f2f);
+    width: 100%;
+    color: #fff;
+    padding: 10px;
+    padding-top: 0;
+    margin:0;
+    border-top-left-radius: 20px;
+    border-top: 2px solid #fff;
+    border-left: 2px solid #fff;
+    overflow: hidden;
+  }
+  
+  div{ 
+    float: left;
+    width:22%;
+    margin-left: 10px;
+    background-color:#efefef;
+    padding:3px;
+  }
+  body{
+    padding:2%;
+    width: 700px;
+    margin: auto;
+  }
+  
+  button{
+    width:140px;
+    border-radius:5%;
+    border:2px solid #ccc;
+    background-color: #006494;
+    color: #fff;
+    font-weight:2px;
+    padding:7px;
+    float: left;
+    margin:2%;
+    margin-left: 2.5%;
+    margin-top:30px;
+  }

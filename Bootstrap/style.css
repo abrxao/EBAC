@@ -1,0 +1,266 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,300;0,500;1,600;1,800&display=swap');
+
+html{
+    font-size: 65.5%;
+    background-color: #222;   
+}
+
+body *{
+    box-sizing: border-box;
+}
+
+body{
+    background:linear-gradient(310deg,rgb(121, 28, 251,.1) 0%,#18022e 100%);
+    padding: 20px;
+}
+
+
+
+
+@media (max-width:600px){
+    
+    p{
+        font-size: 1.5rem;
+    }
+
+    .container.header1{
+        justify-items: center;
+        align-items: center;
+    }
+    h1{
+        font-size: 2rem;
+    }
+    
+   
+
+    .col#logos{
+        height: 65px;
+        margin-right: 25px;
+        margin-top: -10px;
+    }
+    
+
+    .nav li{
+        padding: 5px;
+    }
+    .nav a{
+        padding: 0;
+        margin: 10;
+        font-size: 1.8rem;
+    }
+
+    .col-md-12{
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+    }
+
+    
+}
+
+
+
+.sobre-title{
+    margin-bottom: 15px;
+    animation: titulo 2s infinite;
+    color: #555;
+    background-color: #ffd500;    
+    border-radius: 50px;
+    border-bottom-left-radius: 0;
+    width: 108px;
+    padding: 0px 8px;
+    border: 3px solid #777;
+}
+
+.title-contato{
+    margin-bottom: 15px;
+    animation: titulo 2s infinite;
+    color: #555;
+    background-color: #ffd500;
+    border-radius: 50px;
+    border-bottom-left-radius: 0;
+    width: 140px;
+    padding: 0px 8px;
+    border: 3px solid #777;
+}
+
+
+.card:hover{
+    border: 2px solid #ffd500;
+    transform: scale(1.02);
+}
+
+
+.title-produtos{
+    margin-bottom: 15px;
+    animation: titulo 2s infinite;
+    color: #555;
+    background-color: #ffd500;
+    border: 3px solid #777;    
+    border-radius: 50px;
+    border-bottom-left-radius: 0px;
+    width: 158px;
+    padding: 0px 8px;
+}
+
+.logo{
+    animation: titulo2 2.5s ease-in-out infinite;
+    color: #fff;
+}
+
+@keyframes titulo{
+    0% { text-shadow: 0px 0px 3px #ffd500;}
+    50% { text-shadow: 0px 0px 15px #ffd500; }
+    100% { text-shadow: 0px 0px 3px #ffd500; }
+}
+
+#img-sobre{
+    box-sizing: border-box;
+}
+
+.col-sm-12 .nav {
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0px;
+}
+
+#prin{
+    border: 2px solid #ddd;
+    border-radius: 18px;
+    border-bottom-left-radius: 5px;
+    border-right: 2px solid #ddd;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color:#222;
+    padding-bottom: 15px;
+    
+}
+
+.btn-primary{
+    background-color: #888;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    border-bottom-left-radius: 0px;
+}
+
+.col-md-8{
+    font-size: 1.8rem;
+    overflow: hidden;
+    color: #fff;
+    margin: auto;
+    
+}
+
+section .col-md-8, section .col-md-12 {
+    background: #ffffff00;
+}
+
+section{
+    padding: 10px 0px;
+}
+
+.container-md{
+    border: 1px solid #343434;
+    padding: 20px;
+}
+
+.nav{
+    margin-top:50px;
+    
+}
+
+.nav li a{
+    color: #fff;
+}
+
+.nav li :hover{
+    color: #ddd;
+}
+
+input, label{
+    margin-bottom:5px;
+}
+header{
+    margin-top: 20px;
+    border-bottom: 3px solid #888  ;
+}
+
+header h1{
+    margin-left: -40px;
+    display: flex;
+    font-size: 4.8rem;
+    font-family: Overpass, sans-serif;
+    font-weight: 600;
+    font-style: italic;
+}
+
+
+#logos{
+    width: 35px;
+    height: 60px;
+    margin-right: 28px;
+    margin-top: -15px;
+
+}
+
+.logo1 .col h1{
+    width: 100px;
+    text-align: right;
+}
+
+
+
+.card{
+    background-color: #333;
+    border: 2px solid #888;
+    border-radius: 15px;
+    border-bottom-left-radius: 4px;
+    border-top-right-radius: 100px;
+    align-items: center;
+    text-align: center;
+    height: auto;
+    margin: 10px 15px;
+
+}
+
+.card img{
+    width: auto;
+    min-width: 50%;
+    max-width: 70%;
+    padding: 10px;
+}
+
+.modal.fade{
+    color: #222;
+    font-size: 1.5rem;
+
+    
+}
+
+.btn-primary{
+   color: #fff; 
+}
+
+textarea{
+    margin: 10px 0px;
+}
+
+.btn:hover{
+    background-color: #ffd500;
+    color: #555;
+    animation: buton 1s ease-in infinite;
+}
+
+#botao{
+    color: #555;
+    background-color: #ffd500;
+    animation: buton .7s ease-in infinite;
+}
+
+@keyframes buton{
+    50%{box-shadow: 0px 0px 15px #ffd500;
+    }
+
+}

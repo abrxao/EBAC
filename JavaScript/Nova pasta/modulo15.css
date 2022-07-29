@@ -1,0 +1,100 @@
+html {
+  background: url('/Css/textura.jpg');
+
+}
+
+body * {
+  box-sizing: border-box;
+}
+
+body{
+  font-family:Calibri, 'Trebuchet MS', sans-serif;
+  width:100%;
+  height: 100%;
+  margin:auto;  
+  overflow:hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background:linear-gradient(45deg, #125f62,#120116);
+  opacity: 90%;
+  }
+
+p{
+  text-align: center;
+}
+
+h1{
+  
+  margin: auto;
+  margin-top: 8px;
+  color: #2f2f2f;
+}
+
+.mensagem{
+  width: 100%;
+  padding: 5px; 
+  margin: auto;
+  text-align: center;
+}
+#botao{
+  width: 40%;
+  height: 40px;
+  margin-top: 20px;
+  color: #fff;
+  background-color: #125f62;
+}
+
+@keyframes boton{
+  0% { width: 40%;height: 40px;}
+  50% {width: 42%;height: 42px;}
+  100% { width: 40%;height: 40px;}
+}
+@keyframes errore{
+  0% {}
+  
+  100% {width: 96%;}
+}
+
+button:hover{
+  background-color: #13868a;
+  color: #bfb;
+  font-weight: bold;
+  animation: boton 1s infinite;
+  cursor: pointer;
+}
+
+.forms{
+  padding: 15px;
+  margin: auto;
+  margin-top: 20px;
+  width: 450px ;
+  height:460px;
+  border:2px solid rgb(255, 255, 255,0.3);
+  border-radius: 20px;
+  background-color: #fff;
+  justify-content: center;
+  align-items: center;
+  opacity: 100%;
+
+}
+
+
+
+.erro{
+  border-color: #f00;
+  animation: errore .4s ease-in;
+}
+
+div{
+  text-align: center;
+}
+input, button{
+  display: block;
+  border: 2px solid #ddd;
+  border-radius: 8px;  
+  margin: auto;
+  padding: 7px;
+  margin-top: 10px;
+  width: 100%;  
+}

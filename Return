@@ -1,0 +1,513 @@
+[33mcommit 72114ebf7d7f747c2c3dded342c2aa0026ed4961[m[33m ([m[1;36mHEAD -> [m[1;32mdev2[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/dev2[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mmain[m[33m)[m
+Author: Abraão Albuquerque <abraao.hs2@gmail.com>
+Date:   Fri Jul 29 16:35:29 2022 -0300
+
+    me ajuda
+
+[33mcommit 043f54ad64df9a40a761e68327a066f61ff350ce[m[33m ([m[1;32mdev[m[33m)[m
+Author: Abraão Albuquerque <abraao.hs2@gmail.com>
+Date:   Fri Jul 29 16:25:24 2022 -0300
+
+    adicionando gulp
+
+[33mcommit 65f2cae74c669da58dbd3707af99d9b6d094c495[m
+Author: Abraão Albuquerque <abraao.hs2@gmail.com>
+Date:   Fri Jul 29 16:23:19 2022 -0300
+
+    Remove pastas gulp
+
+[33mcommit 19851150326cbe822f321a794b94737130d1c3cd[m
+Author: Abraão Albuquerque <abraao.hs2@gmail.com>
+Date:   Fri Jul 29 16:15:41 2022 -0300
+
+    erro
+
+[33mcommit 65d1a128e7f0ccb20dbd672d08a055b2353c6f99[m
+Author: Abraão Albuquerque <abraao.hs2@gmail.com>
+Date:   Fri Jul 29 16:03:12 2022 -0300
+
+    adicionando gulp
+
+[33mcommit 22d7cd19acfc95aee84549b5d1af37e8ea9b32ff[m
+Author: Abraão Albuquerque <101681023+abrxao@users.noreply.github.com>
+Date:   Fri Jul 29 15:33:24 2022 -0300
+
+    Delete gulp directory
+
+[33mcommit b4713df4f9c0ce5caac88c2707056ed20589d60a[m
+Merge: b1be630 c13cc68
+Author: Abraão Albuquerque <101681023+abrxao@users.noreply.github.com>
+Date:   Thu Jul 28 20:50:21 2022 -0300
+
+    Merge pull request #23 from abrxao/dev
+    
+    limpeza 2
+
+[33mcommit c13cc684c7c23aebe998fb65af9520a61a157de3[m[33m ([m[1;31morigin/dev[m[33m)[m
+Merge: c0f51b8 b1be630
+Author: Abraão Albuquerque <101681023+abrxao@users.noreply.github.com>
+Date:   Thu Jul 28 20:49:37 2022 -0300
+
+    Merge pull request #22 from abrxao/main
+    
+    limpeza
+
+[33mcommit c0f51b83f6bb8468e220c43de3921f1859ebb2fd[m
+Author: Abraão Albuquerque <abraao.hs2@gmail.com>
+Date:   Thu Jul 28 20:44:19 2022 -0300
+
+    p
+
+[33mcommit b1be630917b1be5c97373c21464372d93e62f266[m
+Merge: 33274cf c463d59
+Author: Abraão Albuquerque <101681023+abrxao@users.noreply.github.com>
+Date:   Thu Jul 28 20:27:38 2022 -0300
+
+    Merge pull request #21 from abrxao/dev
+    
+    , assim como o cpf eu escolhi que o cep tbm n seja obrigatorio, porem…
+
+[33mcommit c463d59fd3d5969bad8461c55aeab845d3187329[m
+Author: Abraão Albuquerque <abraao.hs2@gmail.com>
+Date:   Thu Jul 28 20:27:17 2022 -0300
+
+    , assim como o cpf eu escolhi que o cep tbm n seja obrigatorio, porem fiz uma serie de condicoes para que a pessoa nao coloque um cep ou cpf qualquer
+
+[33mcommit 33274cf25b3a21a79088a10bab9a14b03f9a21c4[m
+Merge: 62ae44e 3c3d412
+Author: Abraão Albuquerque <101681023+abrxao@users.noreply.github.com>
+Date:   Thu Jul 28 18:59:09 2022 -0300
+
+    Merge pull request #20 from abrxao/dev
+    
+    Dev
+
+[33mcommit 3c3d4125aeec744a3603df1abfe229ba04627b52[m
+Author: Abraão Albuquerque <abraao.hs2@gmail.com>
+Date:   Thu Jul 28 18:58:07 2022 -0300
+
+    arrumando pastas e arquivos
+
+[33mcommit 9f0c593a953166a37e5366a627200ebe05d521ea[m
+Author: Abraão Albuquerque <abraao.hs2@gmail.com>
+Date:   Thu Jul 28 18:35:00 2022 -0300
+
+    corrigindo alguns bugs e ajustando o input da newsletter
+
+[33mcommit 62ae44e5d0096fadb3cf43ed87227ee3bf27f880[m
+Merge: 6592c15 fea406d
+Author: Abraão Albuquerque <101681023+abrxao@users.noreply.github.com>
+Date:   Thu Jul 28 15:37:51 2022 -0300
+
+    Merge pull request #19 from abrxao/dev
+    
+    Dev
+
+[33mcommit fea406db1b600861a9e861363a2a9294d727e94c[m
+Author: Abraão Albuquerque <abraao.hs2@gmail.com>
+Date:   Thu Jul 28 15:36:19 2022 -0300
+
+    adicionando margens aos produtos do desktop e ajustando itens para mobile ficarem em coluna e não mais em carrosel
+
+[33mcommit 6ce4fa4936739af7586ab150dc8a91fafdecbc19[m
+Author: Abraão Albuquerque <abraao.hs2@gmail.com>
+Date:   Wed Jul 27 15:45:39 2022 -0300
+
+    aplicando gulp
+
+[33mcommit 6592c15c90f9244c10bb567a044c7ef7da618835[m
+Merge: 7d1cc32 9d22a51
+Author: Abraão Albuquerque <101681023+abrxao@users.noreply.github.com>
+Date:   Tue Jul 26 14:08:06 2022 -0300
+
+    Merge pull request #18 from abrxao/dev
+    
+    Dev
+
+[33mcommit 9d22a51155064e416fe736451f5c5cbe2bdc64b3[m
+Author: Abraão Albuquerque <abraao.hs2@gmail.com>
+Date:   Tue Jul 26 14:05:08 2022 -0300
+
+    ajustando a estilizancao da pagina
+
+[33mcommit 217771f8156ecdc5efb6b4751cbc2f5aa354ddc4[m
+Author: Abraão Albuquerque <abraao.hs2@gmail.com>
+Date:   Tue Jul 26 13:41:47 2022 -0300
+
+    configurando o owl carrosel
+
+[33mcommit 6cc26f41034e2007c33c826199797f1a1cb0d2bf[m
+Author: Abraão Albuquerque <abraao.hs2@gmail.com>
+Date:   Tue Jul 26 13:04:05 2022 -0300
+
+    o menu offcanvas tinha dado errado e eu troquei para o menu dropdown. tambem adiocionei o restante da costumizacao no form do contato
+
+[33mcommit a4773a1d4214c405f17a2c70af4e43cd40d98408[m
+Author: Abraão Albuquerque <abraao.hs2@gmail.com>
+Date:   Mon Jul 25 19:43:57 2022 -0300
+
+    Finalizando verificacao de cpf e terminando restante das verificacoes do formulario
+
+[33mcommit 69b9eb1f2f2db53917c795d7df1735121df5c9c9[m
+Author: Abraão Albuquerque <abraao.hs2@gmail.com>
+Date:   Mon Jul 25 18:41:32 2022 -0300
+
+    Adicionando menu e algoritmo proprio de verificação de CPF
+
+[33mcommit 7d1cc32d12e6fada92a11395b43f17b541ebeee9[m
+Merge: 1bd17ac c02ad9f
+Author: Abraão Albuquerque <101681023+abrxao@users.noreply.github.com>
+Date:   Sat Jul 23 21:46:34 2022 -0300
+
+    Merge pull request #17 from abrxao/dev
+    
+    corrigindo bug em que o bootstrap.bundle.js na estava sendo reconhecido
+
+[33mcommit c02ad9ffb95339688b348ee82c8092dc31428abc[m
+Author: Abraão Albuquerque <abraao.hs2@gmail.com>
+Date:   Sat Jul 23 21:43:50 2022 -0300
+
+    corrigindo bug em que o bootstrap.bundle.js na estava sendo reconhecido
+
+[33mcommit 1bd17ac5e8120f1f98b71acf88bf7115347d9d34[m
+Merge: 3208744 a16f2ab
+Author: Abraão Albuquerque <101681023+abrxao@users.noreply.github.com>
+Date:   Wed Jul 20 17:31:48 2022 -0300
+
+    Merge pull request #16 from abrxao/dev
+    
+    Ajustando margens e removendo span
+
+[33mcommit a16f2ab5383e5c65c19d41be0655d2958c34429c[m
+Author: Abraão Albuquerque <abraao.hs2@gmail.com>
+Date:   Wed Jul 20 17:30:11 2022 -0300
+
+    Ajustando margens e removendo span
+
+[33mcommit 3208744bb0b0279080d7f0ff9efef97df3c17570[m
+Author: Abraão Albuquerque <101681023+abrxao@users.noreply.github.com>
+Date:   Wed Jul 20 02:14:36 2022 -0300
+
+    Delete caipinha.png
+
+[33mcommit e836bc556811eeca48c446378b7d7e6ac97e82da[m
+Author: Abraão Albuquerque <101681023+abrxao@users.noreply.github.com>
+Date:   Wed Jul 20 02:14:24 2022 -0300
+
+    Delete logo.gif
+
+[33mcommit 2a771f8d5e5a5c2958db004d6a3e46345ec2d9bf[m
+Author: Abraão Albuquerque <101681023+abrxao@users.noreply.github.com>
+Date:   Wed Jul 20 02:13:59 2022 -0300
+
+    Delete ergh.gif
+
+[33mcommit 2fbdca1ff78d6d9a2da021274e995c49a789ad66[m
+Author: Abraão Albuquerque <101681023+abrxao@users.noreply.github.com>
+Date:   Wed Jul 20 02:13:50 2022 -0300
+
+    Delete style-cadastro.css
+
+[33mcommit 941fbda70dc8e172cd5774d54ddc8f47cf7a0b0a[m
+Author: Abraão Albuquerque <101681023+abrxao@users.noreply.github.com>
+Date:   Wed Jul 20 02:13:35 2022 -0300
+
+    Delete Bootstrap.zip
+
+[33mcommit 1745b5b8f6de657d5b55decfdb82429bb2439858[m
+Author: Abraão Albuquerque <101681023+abrxao@users.noreply.github.com>
+Date:   Wed Jul 20 02:13:31 2022 -0300
+
+    Delete Bootstrap-1.zip
+
+[33mcommit 192a515b2e7cb7ea1b885f827bbabbbbf3ade6ae[m
+Author: Abraão Albuquerque <101681023+abrxao@users.noreply.github.com>
+Date:   Wed Jul 20 02:13:24 2022 -0300
+
+    Delete Bootstrap-1.rar
+
+[33mcommit 7f41d32bc9e835e163d0cd810776c57d3d6666ef[m
+Merge: 53dd6b6 e1d8e39
+Author: Abraão Albuquerque <101681023+abrxao@users.noreply.github.com>
+Date:   Wed Jul 20 02:12:48 2022 -0300
+
+    Merge pull request #15 from abrxao/dev
+    
+    Dev
+
+[33mcommit e1d8e3976ee355d1b7d6d67b645d5789158c9001[m
+Author: Abraão Albuquerque <abraao.hs2@gmail.com>
+Date:   Wed Jul 20 02:12:18 2022 -0300
+
+    organizando o github
+
+[33mcommit ce2adc8047a64f2b86dc9d55218dc73953372ca4[m
+Author: Abraão Albuquerque <abraao.hs2@gmail.com>
+Date:   Wed Jul 20 02:11:13 2022 -0300
+
+    apagando emoji do menu e ajustando o restante das correções do modulo
+
+[33mcommit 95b19736e79ae97148f3268607f02552821a861f[m
+Author: Abraão Albuquerque <abraao.hs2@gmail.com>
+Date:   Tue Jul 19 23:56:38 2022 -0300
+
+    usando modal com jquery
+
+[33mcommit 53dd6b663fe1417487c505e6f191e9c284ad6188[m
+Merge: ebb69ca c713dab
+Author: Abraão Albuquerque <101681023+abrxao@users.noreply.github.com>
+Date:   Tue Jul 19 15:00:18 2022 -0300
+
+    Merge pull request #14 from abrxao/dev
+    
+    code together do jquery
+
+[33mcommit c713dabafc72b73cb2fdf720b3656f738bc3b1cd[m
+Author: Abraão Albuquerque <abraao.hs2@gmail.com>
+Date:   Tue Jul 19 14:59:47 2022 -0300
+
+    code together do jquery
+
+[33mcommit ebb69ca9bfa161936e0df629620127ea56bf5fd2[m
+Author: Abraão Albuquerque <101681023+abrxao@users.noreply.github.com>
+Date:   Mon Jul 18 16:39:30 2022 -0300
+
+    Delete teste.html
+
+[33mcommit 68a19c8c4002f6fae8ba54dae0aabdc8b2265028[m
+Merge: c4da7d3 b65beeb
+Author: Abraão Albuquerque <101681023+abrxao@users.noreply.github.com>
+Date:   Mon Jul 18 16:39:02 2022 -0300
+
+    Merge pull request #13 from abrxao/dev
+    
+    Dev
+
+[33mcommit c4da7d3a2aea2fb1b54fb87ba0e168e66ec54f7d[m
+Author: Abraão Albuquerque <101681023+abrxao@users.noreply.github.com>
+Date:   Mon Jul 18 16:37:52 2022 -0300
+
+    Update .gitignore
+
+[33mcommit b65beeb33e04171b737c8da70de2701bcbc3786e[m
+Author: Abraão Albuquerque <abraao.hs2@gmail.com>
+Date:   Mon Jul 18 16:35:58 2022 -0300
+
+    Adcionando os links ao menu do cadastro
+
+[33mcommit 22b98cc5fc97b7a69e5b0e51a847cca934c3f767[m
+Author: Abraão Albuquerque <abraao.hs2@gmail.com>
+Date:   Mon Jul 18 16:31:16 2022 -0300
+
+    retirando a parte de contato da home e linkando com o cadastro
+
+[33mcommit 99857bc37dd908ff454cf9214301cfaad1802df8[m
+Author: Abraão Albuquerque <abraao.hs2@gmail.com>
+Date:   Mon Jul 18 15:48:00 2022 -0300
+
+    correcao de bug no link home do menu
+
+[33mcommit 90c6532b5a0eb09c56894a8f03716047d50164dd[m
+Author: Abraão Albuquerque <abraao.hs2@gmail.com>
+Date:   Mon Jul 18 15:39:41 2022 -0300
+
+    adicionando carrosel, ajustando menu reponsivo, adicionando campos no cadastro e tornando alguns campos obrigatorios
+
+[33mcommit 8cfa97d459b4bfeb1a41924f731d549128776474[m
+Merge: aeb492a 82f2ace
+Author: Abraão Albuquerque <101681023+abrxao@users.noreply.github.com>
+Date:   Mon Jul 18 13:43:00 2022 -0300
+
+    Merge pull request #12 from abrxao/dev
+    
+    ajustando titulo
+
+[33mcommit 82f2acecf7dea2d08d2cb611509137b41fefb1d6[m
+Author: Abraão Albuquerque <abraao.hs2@gmail.com>
+Date:   Mon Jul 18 13:41:43 2022 -0300
+
+    ajustando titulo
+
+[33mcommit aeb492a6af39c7b6d50f49bc707af8f51ef8e1f1[m
+Merge: 61c322c cf16c56
+Author: Abraão Albuquerque <101681023+abrxao@users.noreply.github.com>
+Date:   Fri Jul 15 13:32:16 2022 -0300
+
+    Merge pull request #11 from abrxao/dev
+    
+    ok
+
+[33mcommit cf16c567f433c453e283a3fe10db356e9159ffa7[m
+Author: Abraão Albuquerque <abraao.hs2@gmail.com>
+Date:   Fri Jul 15 13:29:45 2022 -0300
+
+    ajustando margem da imagem na section sobre
+
+[33mcommit 9088158039add46848130b6c1cffe481cea5f79f[m
+Author: Abraão Albuquerque <abraao.hs2@gmail.com>
+Date:   Fri Jul 15 13:25:55 2022 -0300
+
+    alterando breakpoint do bootstrap md de 992px para 1023px
+
+[33mcommit 70eb9e2af580b0bdad302fde6471f22189fb40fe[m
+Author: Abraão Albuquerque <abraao.hs2@gmail.com>
+Date:   Fri Jul 15 13:13:17 2022 -0300
+
+    finalizando a responsividade
+
+[33mcommit e8bb663ebd862364a95097c151815ce5ebed9041[m
+Author: Abraão Albuquerque <abraao.hs2@gmail.com>
+Date:   Fri Jul 15 11:02:36 2022 -0300
+
+    tornando mais responsivo
+
+[33mcommit 0accf2a6db905eaf398bc86d1cd092ff86e4f590[m
+Author: Abraão Albuquerque <abraao.hs2@gmail.com>
+Date:   Fri Jul 8 15:48:35 2022 -0300
+
+    correcao do estilo
+
+[33mcommit 04ee669cce09b7fcfc045b6ca7df61d6463b9520[m
+Author: Abraão Albuquerque <abraao.hs2@gmail.com>
+Date:   Thu Jun 30 15:13:57 2022 -0300
+
+    correção no brakepoint css
+
+[33mcommit 61c322c466b46b211697a11203cc2980028b64e1[m
+Merge: 712ab8a dfad448
+Author: Abraão Albuquerque <101681023+abrxao@users.noreply.github.com>
+Date:   Thu Jun 30 14:31:32 2022 -0300
+
+    Merge pull request #10 from abrxao/dev
+    
+    ajustando o submit
+
+[33mcommit dfad448c4b875c3824ebb025b7b213e34f34eb10[m
+Author: Abraão Albuquerque <abraao.hs2@gmail.com>
+Date:   Thu Jun 30 13:53:32 2022 -0300
+
+    ajustando bug do submit vazio
+
+[33mcommit fc36b3248abae4461650f05088917b02b805f2f2[m
+Author: Abraão Albuquerque <abraao.hs2@gmail.com>
+Date:   Thu Jun 30 13:49:16 2022 -0300
+
+    Adicionando configuracao para nao enviar formulario caso tenha errro
+
+[33mcommit 8c1b856bdf61a45acbfde9dbeb80b2ab930edcc1[m
+Author: Abraão Albuquerque <abraao.hs2@gmail.com>
+Date:   Wed Jun 29 15:09:12 2022 -0300
+
+    adicionando page de cadastro
+
+[33mcommit 712ab8a02a3d31c172ef43e25fab651ac2fd08ef[m
+Merge: fe78ef4 244799b
+Author: Abraão Albuquerque <101681023+abrxao@users.noreply.github.com>
+Date:   Wed Jun 29 10:37:06 2022 -0300
+
+    Merge pull request #9 from abrxao/dev
+    
+    Finalizando o bootstrap - modulo 16
+
+[33mcommit 244799b74cef942a717c2c9de5a9e6197d051ca5[m
+Author: Abraão Albuquerque <abraao.hs2@gmail.com>
+Date:   Tue Jun 28 16:54:16 2022 -0300
+
+    finalizando o site com bootstrap
+
+[33mcommit 306e174e7fb9852e8aabedc4a13cfeeb4020c5b7[m
+Author: Abraão Albuquerque <abraao.hs2@gmail.com>
+Date:   Tue Jun 28 16:11:10 2022 -0300
+
+    finalizando o bootstrap desktop
+
+[33mcommit 8c5c73a5c05cc181e8f68e117627c3e8418ce399[m
+Author: Abraão Albuquerque <abraao.hs2@gmail.com>
+Date:   Tue Jun 28 01:32:43 2022 -0300
+
+    Ajustando e adicionando imagens dos produtos
+
+[33mcommit fe78ef40d0f9b8a4bfe1c0d6c8772aaf9ae43a9d[m
+Merge: 53636ca 5fec214
+Author: Abraão Albuquerque <101681023+abrxao@users.noreply.github.com>
+Date:   Sun Jun 26 23:47:30 2022 -0300
+
+    Merge pull request #8 from abrxao/dev
+    
+    Resolvendo bug que o modal não aparecia
+
+[33mcommit 5fec21442972e2328f000ee7dca4da72657efbbe[m
+Author: Abraão Albuquerque <abraao.hs2@gmail.com>
+Date:   Sun Jun 26 23:46:44 2022 -0300
+
+    Resolvendo bug que o modal não aparecia
+
+[33mcommit 53636cac2116453947b3a5862ce6d1516f7086e1[m
+Merge: 4e3cf3c f7d8264
+Author: Abraão Albuquerque <101681023+abrxao@users.noreply.github.com>
+Date:   Sun Jun 26 11:21:44 2022 -0300
+
+    Merge pull request #7 from abrxao/dev
+    
+    INICIANDO O BS
+
+[33mcommit f7d82643b4275ac25df31823a8ff8b99a8c6b38f[m
+Author: Abraão Albuquerque <abraao.hs2@gmail.com>
+Date:   Sun Jun 26 11:19:23 2022 -0300
+
+    primeiros passos bs
+
+[33mcommit 9fcb1269f5cf7c7f6cbdec982a8cde60c5145569[m
+Author: Abraão Albuquerque <abraao.hs2@gmail.com>
+Date:   Fri Jun 24 21:24:59 2022 -0300
+
+    Ajustando o layout
+
+[33mcommit 18508343dd655c16a3190641cac0c3af97981ae5[m
+Author: Abraão Albuquerque <abraao.hs2@gmail.com>
+Date:   Fri Jun 24 18:39:55 2022 -0300
+
+    Inicio do Bootstrap
+
+[33mcommit 4e3cf3c016dc7ffb00ef3b72588e4f996d365ac0[m
+Merge: 44d0e2e 9ae77da
+Author: Abraão Albuquerque <101681023+abrxao@users.noreply.github.com>
+Date:   Thu Jun 23 22:01:59 2022 -0300
+
+    Merge pull request #6 from abrxao/dev
+    
+    Primeira tentativa do modulo 15
+
+[33mcommit 9ae77da083cc626f401f933a1bf0a6143cef9c82[m
+Author: Abraão Albuquerque <abraao.hs2@gmail.com>
+Date:   Thu Jun 23 21:55:20 2022 -0300
+
+    Primeira tentativa do modulo 15
+
+[33mcommit 44d0e2e7ae5d11b4a938e7964e48ea9b45eb8aa9[m
+Merge: cb8dbf6 3c24212
+Author: Abraão Albuquerque <101681023+abrxao@users.noreply.github.com>
+Date:   Thu Jun 23 17:51:19 2022 -0300
+
+    Merge pull request #5 from abrxao/dev
+    
+    Criando Regex, ajustando HTML e adicionando animação.
+
+[33mcommit 3c24212ccf7114366990f24b3449e0fdcbd7e9e0[m
+Author: Abraão Albuquerque <abraao.hs2@gmail.com>
+Date:   Thu Jun 23 17:49:42 2022 -0300
+
+    Criando o Regex para UF
+
+[33mcommit d9215dbb3d92727de70b82f1bf355e623eb45d0f[m
+Author: Abraão Albuquerque <abraao.hs2@gmail.com>
+Date:   Thu Jun 23 16:52:40 2022 -0300
+
+    Ajustando Html
+
+[33mcommit 6c36e958a78725a8296983dbb9f3720ffc63b091[m
+Merge: 7712b86 9ab5f71
+Author: Abraão Albuquerque <abraao.hs2@gmail.com>
+Date:   Thu Jun 23 16:43:36 2022 -0300
+
+    Merge branch 'dev' of github.com:abrxao/EB

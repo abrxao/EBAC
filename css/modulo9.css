@@ -1,0 +1,414 @@
+
+html {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background-color: #000;
+}
+
+body {
+  background-color: rgba(0, 255, 30, 0);
+  overflow-x:hidden;
+  display: block;
+  width: auto;
+}
+section{
+  overflow-x: hidden;
+}
+
+.bem{
+  background-color: #444;
+  font-size: 1.4rem;
+}
+
+.corpo{
+  width: 40vw;
+  margin: auto;
+  border-left: solid 1px #fff;
+  border-right: solid 1px #fff;
+}
+
+.corpogm{
+  width: 95vw;
+  margin: auto;
+}
+
+header {
+  color: white;
+  background: #444;
+  text-align: center;
+  padding-bottom: 15px;
+}
+
+.title{
+  color: #fff;
+  width: 100%;
+  text-align: center;
+  margin-top: 15px;
+  font-size: 30px;
+  text-shadow:1px 1px 2px #0ff ;
+}
+
+div h3 {
+  font-size: 20px ;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+.menu {
+  margin: 10px;
+  background-color: #000;
+  PADDING-left: 7PX;
+  text-align: center;
+}
+
+.menu a{
+  font-size: 1.5rem;
+  margin: 29px;
+  text-decoration: none;
+  color: #fff;
+  width: 25%;
+}
+
+.menu a:hover{
+  color: #cff
+}
+
+.border{
+  margin-top: 4px;
+  height: 5px;
+  width: 100vw;
+  background-image: linear-gradient(45deg , #f0f, #0ff);
+}
+
+.hello{
+  width: 90%;
+  background-color: #333;
+  margin: auto;
+  padding: 2%;
+  color: #fff;
+  font-size: 20px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.text-musical{
+  color: #fff;
+  float: center;
+  height: 100px;
+  font-size: 20px;
+  padding-left: 5px;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 45px;
+  border-left: solid 1px;
+}
+
+.hell a {
+  color: #fcf;
+  text-decoration: none;
+}
+
+.hell img{
+  width: 20px;
+  height: 20px;
+
+}
+
+.hell a:hover{
+  color: #fef;
+}
+
+.picperfil {
+  margin:auto;
+  margin-top: 20px;
+  border: double 6px transparent;
+  border-radius: 50%;
+  background-image: linear-gradient(white,white), radial-gradient(circle at top left, rgb(0, 255, 255),#f0f);
+  background-origin: border-box;
+  background-clip: content-box, border-box;  
+  overflow: hidden;
+  width: 19vw;
+  height: 19vw;
+}
+
+.picperfil img{
+  position: initial;
+  width: 100%;  
+}
+
+.rap {
+  margin-top: 10px;
+  margin: auto;
+  border-right: double 6px #555;
+  overflow: hidden;
+  border-radius: 10%;
+  width: 200px;
+  height: 200px;
+}
+
+.rap img{
+  position: initial;
+  width: 100%;  
+}
+
+.eletro {
+  margin-top: 10px;
+  margin: auto;
+  border-right: double 6px #0ff;
+  overflow: hidden;
+  border-radius: 10%;
+  width: 200px;
+  height: 200px;
+}
+
+.eletro img{
+  position: center;
+  width: 100%;
+}
+
+.blues {
+  margin-top: 10px;
+  margin: auto;
+  border-right: double 6px #00f;
+  overflow: hidden;
+  border-radius: 10%;
+  width: 200px;
+  height: 200px;
+}
+
+.blues img{
+  position: center;
+  width: 100%;
+}
+
+.hell{
+  width: 60%;
+  margin: auto;
+  background-color: #000;
+  color: #fff;
+  font-size: 1.5rem;
+  float: left;
+  text-align: center;
+  padding: 3%;
+  margin-left: 15%;
+}
+
+.video{
+ text-align: center;
+ width: 720px;
+ height: 480px;
+}
+
+.bike {
+  margin-left: 3%;
+  margin-right: 2%;
+  border: double 6px transparent;
+  border-radius: 50%;
+  background-image: linear-gradient(white, white), radial-gradient(circle at top left, rgb(0,0,120),#09f);
+  background-origin: border-box;
+  background-clip: content-box, border-box;  
+  overflow: hidden;
+  width: 22vw;
+  float: left;
+  height: 22vw;
+}
+
+.bike img{
+  position: center;
+  width: 100%;
+}
+
+.fa {
+  margin-RIGHT: 3%;
+  margin-left: 2%;
+  border: double 6px transparent;
+  border-radius: 50%;
+  background-image: linear-gradient(white, white), radial-gradient(circle at top left, rgb(255,0,255),#faf);
+  background-origin: border-box;
+  background-clip: content-box, border-box;  
+  overflow: hidden;
+  float: right;
+  width: 22vw;
+  height: 22vw;
+}
+
+.fa img{
+  position: center;
+  width: 100%;
+}
+
+.corpohobbies{
+  width: 60%;
+  margin: auto;
+}
+
+.link-hob{
+  font-size: 50px;
+}
+
+iframe{
+  border-right: solid 1px #fff;
+}
+
+.coluna{
+  display: block;
+  float: left;
+  padding: 1.5%;
+  width: 30%;
+}
+
+
+@media (max-width: 1771px) {
+  .text-musical{
+    height: 120px;
+  }
+}
+
+@media (max-width: 768px){
+
+  .corpo{
+    width: 50%;
+  }
+  .text-musical{
+    height: 210px;
+  }
+
+  .eletro{
+    width: 150px;
+    height: 150px;
+    margin-top: 2rem;
+  }
+  
+  .rap{
+    width: 150px;
+    height: 150px;
+    margin-top: 2rem;
+  }
+  .blues{
+    width: 150px;
+    height: 150px;
+    margin-top: 2rem;
+  }
+    
+  .bike{
+    width: 200px;
+    height: 200px;
+    float: left;
+  }
+  .corpohobbies{
+    margin: auto;
+    width: 80%;
+    margin-top: 2rem;
+  }
+
+  .fa{
+    
+    width: 200px;
+    height: 200px;
+    float: right;
+  }
+
+  .hell{
+    float:left;
+    margin-left: 7%;
+    width: 80%;
+  }
+}
+
+@media (max-width: 500px) {
+
+  .corpo{
+    width: 95%;
+  }
+  .coluna{
+    width: 95%;
+  }
+  .text-musical{
+    font-size: 1rem;
+    height: 100px;
+  }
+  .title{
+    float: center;
+    margin-top: 8px;
+    width: 100%;
+    font-size: 1.5rem;
+  }
+  .rap, .eletro, .blues {
+    width: 120px;
+    height: 120px;
+  }
+  .menu a{
+    font-size: 1rem;
+    margin: 1%;
+  }
+  .blues{
+    margin-bottom: 40px;
+  }
+  .colunahobbies{
+    margin-top: 18px;
+    margin-bottom: 1rem;
+    float: center;
+    width: 100px;
+    height: 100px;
+    border: double 3px transparent;
+  }
+  .corpohobbies{
+    width: 90%;
+    margin: auto; 
+    margin-top: 15px;
+    height: 120px;        
+  }
+
+  .hell{
+    margin-left: 2%;
+    margin-top: 60px;
+    padding: 1.9%;
+    width: 92%;
+    text-align: left;
+    font-size: 1rem;
+    margin-bottom: 15px;
+    border-left: solid 1px #fff;
+  }
+
+  .hell img{
+    width: 14px;
+    height: 14px;  
+  }
+
+  h4 {
+    text-align: center;
+    margin-bottom: 5px;
+  }
+  .hello{
+    font-size: 1rem;
+    text-align: justify;
+  }
+  .fa,.bike{
+    border: double 3px transparent;
+    width: 130px;
+    height: 130px;
+    display: block;
+    margin: auto;
+    float: center;
+    margin-top: 8%;
+  }
+
+  
+  .picperfil{
+    width: 200px;
+    height: 200px;
+  }
+}
+
+article {
+  width: 100%;
+}
+
+footer {    
+    position: fixed;
+    background-color: #444;
+    bottom:0;
+    width:100%;
+    padding: 5px;
+    text-align: center;
+    color: #fff;
+}

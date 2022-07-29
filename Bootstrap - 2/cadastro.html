@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./css/bootstrap.min.css" rel="stylesheet" >
+    <link href="./css/style.css" rel="stylesheet">
+    <link href="./css/cadastro.css" rel="stylesheet">
+    
+</head>
+<title>CADASTRO</title>
+</head>
+<body>
+
+    <div class="teste">
+        <div class="col-md-8 col-sm-11" id="prin">
+            
+            <header>
+                <div class="container" >
+                    <div class="row" id="header2">
+                        
+                        <div class="col-md-5 col-sm-12">
+                            <div class="row logo1" >
+                                <a class="homelink" href="index.html"><img src="./images/logo.gif"  id="logos" alt=""> </a>   
+                                
+                                <div class="col"> <h1 id="logotxt" ><a class="homelink" href="index.html">Baroni</a></h1></div>
+                                
+                                <div class="menuEscondido">
+                                    
+                                    <div class="dropdown">
+                                        <button class="btn dropdown-toggle stretched-link" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                            <i class="fa-solid fa-bars-staggered"></i>
+                                        </button>
+                                        
+                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                                            <li class="nav-item"><a class="nav-link" href="index.html">Sobre</a></li>
+                                            <li class="nav-item"><a class="nav-link" href="index.html">Produtos</a></li>
+                                            <li class="nav-item conta"><a class="nav-link" href="cadastro.html">Cadastro</a></li>
+                                            
+                                        </ul>
+                                        
+                                    </div>
+                                </div>
+                                
+                            </div>                
+                        </div>
+                        
+                        <div class="col-md-7 col-sm-12">
+                            <ul class="nav justify-content-end">
+                                <li class="nav-item"><a class="nav-link" href="index.html">Home <i class="fa-solid fa-house"></i></a></li>
+                                <li class="nav-item"><a class="nav-link" href="index.html">Sobre <i class="fa-solid fa-face-laugh-wink"></i></a></li>
+                                <li class="nav-item"><a class="nav-link" href="index.html">Produtos <i class="fa-solid fa-bag-shopping"></i></a></li>
+                                <li class="nav-item conta"><a class="nav-link" href="cadastro.html">Cadastro <i class="fa-solid fa-phone"></i></a></li>
+                                
+                            </ul>
+                        </div>  
+                    </div>          
+                </div>
+            </header>
+            
+            
+            <section id="cadastro">
+                <div class="container cadastro-container">
+                    <div class="row">
+                        <div class="col">
+                            <h1>Faça seu cadastro</h1>
+                            <p>Não perca as novidades e promoções</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        
+                        <div class="col">
+                            <form class="form">
+                                
+                                <div class="form-row">
+                                    <div class="col-md-6 col-12">
+                                        <div class="input-camp">
+                                            <label for="nome">Nome</label>
+                                            <input class="form-control required" required minlength="3" type="text"name="nome" placeholder="Digite seu nome">
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="col-md-6 col-12">
+                                        <div class="input-camp">    
+                                            <label for="nome">Email</label>
+                                            <input class="form-control required" type="email" required name="email" placeholder="Digite seu email">
+                                        </div> 
+                                    </div>
+                                </div>
+                                
+                                <div class="row">
+                                    <div class="col-md-8">
+                                        <label for="endereco">Endereço</label>
+                                        <input placeholder="Ex: Rua dos Patos, 100"required id="endereco" name="endereco" type="adress" class="form-control required">
+                                    </div>
+                                    <div class="col-md-4 col-12">
+                                        <label for="cidade">Cidade</label>
+                                        <input type="text" placeholder=" Digite sua cidade aqui"id="cidade" name="cidade" class="form-control">
+                                    </div>
+                                    <div class="col-12 col-md-6">
+                                        <label for="bairro">Bairro</label>
+                                        <input type="text" placeholder="Digite seu bairro" id="bairro" name="bairro" class="form-control">
+                                    </div>
+                                    <div class="col-12 col-md-6">
+                                        <label for="comp">Complemento</label>
+                                        <input type="text" placeholder=" Ex: Ao lado do posto de gasolina" id="comp" name="comp" class="form-control">
+                                    </div>
+                                    
+                                    
+                                </div> 
+                                
+                                <div class="row">                             
+                                    <div class="col-12 col-md-5">
+                                        <label for="telefone">Telefone</label>
+                                        <input type="number" placeholder=" Digite seu telefone com DDD" id="telefone" name="telefone" minlength="11" maxlength="11" class="form-control" required>
+                                    </div>
+                                    
+                                    <div class="estado col">
+                                        <label for="estado">Estado</label>
+                                        <select name="estado" id="estado" class="form-control">
+                                            <option value="">Selecione o estado</option>
+                                            <option value="ac">AC</option>
+                                            <option value="al">AL</option>
+                                            <option value="ap">AP</option>
+                                            <option value="am">AM</option> 
+                                            <option value="ba">BA</option> 
+                                            <option value="ce">CE</option> 
+                                            <option value="df">DF</option> 
+                                            <option value="es">ES</option> 
+                                            <option value="go">GO</option> 
+                                            <option value="ma">MA</option>               
+                                            <option value="mt">MT</option> 
+                                            <option value="ms">MS</option> 
+                                            <option value="mg">MG</option> 
+                                            <option value="pa">PA</option> 
+                                            <option value="pb">PB</option> 
+                                            <option value="pr">PR</option> 
+                                            <option value="pe">PE</option> 
+                                            <option value="pi">PI</option> 
+                                            <option value="rj">RJ</option> 
+                                            <option value="rn">RN</option> 
+                                            <option value="rs">RS</option> 
+                                            <option value="ro">RO</option>
+                                            <option value="ro">RR</option>
+                                            <option value="ro">SC</option>
+                                            <option value="ro">SP</option>
+                                            <option value="ro">SE</option>
+                                            <option value="ro">TO</option>                                
+                                        </select>
+                                    </div>
+
+                                    <div class="col-12 col-md-5">
+                                        <label for="cep">CEP</label>
+                                        <input placeholder="Digite seu CEP" type="number" name="cep" maxlength="8" minlength="8" required id="cep" class="form-control required">
+                                    </div>
+                                </div>
+                                
+                                <div class="row" >
+                                    <div class="col">    
+                                        <textarea class="form-control" placeholder="Tire suas duvidas aqui"  rows="5"></textarea>
+                                    </div>                            
+                                </div>
+                                
+                                <div class="row informs">
+
+                                    <div class="col" >
+                                         
+                                        <input type="checkbox" name="promo" id="promo" class="checkbox">
+                                       <label for="promo">Aceito rebecer informações</label>
+                                                                    
+                                    </div>
+
+                                    <div class="colform-check">
+                                        
+                                    </div>
+
+                                </div>
+                                
+                                <div class="row">
+                                    <div class="col-md-4 col-sm-6"><button type="submit" class="btn btn-lg btn-succes" > Realizar cadastro</button></div>
+                                        
+                                    </div>
+                                </form>
+                                
+                            </div>  
+                            
+                        </div>
+                    </div>
+                </section>
+                
+                
+            </div>
+        </div>
+    
+
+        
+        <script src="js/bootstrap.bundle.js"></script>
+        <script src="https://kit.fontawesome.com/a4425c455b.js" crossorigin="anonymous"></script>
+        
+
+</body>
+</html>
