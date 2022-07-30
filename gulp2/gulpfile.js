@@ -1,5 +1,5 @@
-const gulp = require('gulp')
 const { series, parallel} = require('gulp')
+const gulp = require('gulp')
 const concat = require('gulp-concat')
 const cssmin = require('gulp-cssmin')
 const rename = require('gulp-rename')
@@ -8,6 +8,9 @@ const image = require('gulp-image')
 const stripJs = require('gulp-strip-comments')
 const stripCss = require('gulp-strip-css-comments')
 const htmlmin = require('gulp-htmlmin')
+const babel = require('gulp-babel')
+const browserSync = require('browser-sync').create()
+const reload = browserSync.reload
 
 function tarefasCSS(cb) {
 
@@ -34,12 +37,15 @@ function tarefasJS(cb){
             './node_modules/jquery/dist/jquery.js',
             './node_modules/@fortawesome/fontawesome-free/js/kit.js',            
             './vendor/js/owl.js',
-            './vendor/js/jquery-ui.js',
+            /*'./vendor/js/jquery-ui.js',*/
             './vendor/js/jquery.mask.js',
             './node_modules/bootstrap/dist/js/bootstrap.bundle.min.js',        
             './src/js/custom.js'
         ])
-        .pipe(stripJs())                    // remove comentários
+        .pipe(babel({
+            comments: false,
+            presets: ['@babel/env']
+        }))                    // remove comentários
         .pipe(concat('scripts.js'))         // mescla arquivos
         .pipe(uglify())                     // minifica js
         .pipe(rename({ suffix: '.min'}))    // scripts.min.js
@@ -77,8 +83,27 @@ function tarefasHtml(cb){
     return cb();
 }
 
+gulp.task('serve', function(){
+
+    browserSync.init({
+        server: {
+            baseDir: "./dist"
+        }
+    })
+    gulp.watch('./src/**/*').on('change', process) // repete o processo quando alterar algo em src
+    gulp.watch('./src/**/*').on('change', reload)
+
+})
+
+function end(cb){
+    console.log("tarefas concluídas")
+    return cb()
+}
+
+const process = series(tarefasCSS, tarefasJS, tarefasHtml,end);
 
 exports.styles = tarefasCSS
 exports.scripts = tarefasJS
 exports.images = tarefasImagem
-exports.default = parallel(tarefasCSS, tarefasJS, tarefasHtml);
+
+exports.default = process
