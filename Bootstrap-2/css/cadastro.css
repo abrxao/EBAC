@@ -1,0 +1,35 @@
+body{
+    
+    height: 100vh;
+
+}
+
+#promocao p{
+    font-size: 1rem;
+    
+}
+
+p{
+    font-size: 1.2rem;
+}
+
+label{
+    font-size: 1.3rem;
+}
+
+.row.informs input{
+    width: 10px;
+    
+}
+.row.informs label{
+    width: 230px;
+}
+
+.row.informs{
+    margin-bottom: 10px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;   
+
+}
+
