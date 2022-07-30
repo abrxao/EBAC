@@ -811,14 +811,18 @@ div.row.meu{
 	    background-color: rgba(250,250,250,0.95);
 	    box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
 	}
+
+	ul {
+		background-color: #1e1e1e;
+	}
 	.navbar-dark .navbar-nav .nav-item {
-		border-bottom: 1px solid #eee;
+		border-bottom: 25px solid #eee;
 	}
 	.navbar-dark .navbar-nav .nav-item:last-child {
 		border-bottom: none;
-	}
+	}	
 	.navbar-dark .navbar-nav .nav-link {
-		padding: 15px 0px;
+		padding: 0px 0px;
 	}
 	.featured-page #filters {
 		text-align: right;
@@ -845,6 +849,7 @@ div.row.meu{
 		margin-top: 0px;
 	}
 }
+
 @media(max-width: 450px){
 	.navbar img{
 		width:160px;
