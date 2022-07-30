@@ -789,6 +789,10 @@ div.row.meu{
 	margin: 0;
 }
 
+.dropstart a.btn.nav-link {
+	padding: 10px 4px!important;
+}
+
 /* Responsive Style */
 @media (max-width: 991px) {
 

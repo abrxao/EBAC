@@ -203,7 +203,7 @@ $(document).ready(function(){
       validate(email); 
       
       if(nome.hasClass('invalido') || email.hasClass('invalido')){
-         
+         alert('verifique')
          return false;
          
       }else {
