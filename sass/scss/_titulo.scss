@@ -1,0 +1,45 @@
+header{
+    padding: $font-medium;
+    padding-bottom: $font-small;
+    height: 50px;
+    background-color: $color-04;
+    img{
+        width: $font-big;
+        height: auto;
+        margin: 5px;
+        margin-bottom: 0px;
+    }
+    h2{
+        color: $color-01;
+        font-size: $font-big;
+        margin-left: 4px;
+    }
+
+    @media (max-width: 768px) {
+        margin: auto;
+        padding: 2px;
+
+        h2{
+            margin: 15px;
+            text-align: center;
+        }
+            
+    
+    }
+}
+
+footer{
+    padding: 5px;
+    margin: 0px;
+
+    p{  
+        line-height: normal;
+        margin-left: 20px;
+        margin-bottom: 0px;
+    }
+    
+}
+
+body{
+    height: 100vh;
+}

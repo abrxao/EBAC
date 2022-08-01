@@ -1,12 +1,22 @@
-.cars {
+.cars {    
+    height: auto;
+
     h2 {
-        color: $color-02;
+        color: $color-03;
     }
     li {
         color: $color-04;
-
-        a {
-            background-color: $color-default;
-        }
     }
+
+    @media (max-width: 768px) {
+        padding-right: 8%;
+        a{
+            margin: 0px;
+        } 
+        img{
+            height: auto;
+        }
+
+    }
+    
 }
