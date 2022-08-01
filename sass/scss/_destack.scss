@@ -1,0 +1,68 @@
+.destack {
+    
+    background-color: $color-01;
+    padding: $space-default;
+
+    .container{
+        width: 95%;
+    }
+
+    
+    h1 {
+        color: $color-04;
+        text-align: center;
+        font-size: $font-medium;
+        margin-top: 0;
+        width: 100%;
+    }
+    span{
+        background-color: $color-04;
+        padding: 8px;
+        border-radius: 20px;
+        color: $color-01;
+        font-size: $font-small;
+        margin-left: $space-default;
+    }
+
+    img {
+        width: 95%;
+        margin: $font-medium auto;
+        margin-right: 8%;
+        border-left: 3px solid $color-03;
+        padding-left: 5px;        
+
+    }
+    p {
+        font-size: $font-normal;
+        color: $color-04;
+        padding: $font-normal auto;
+        width: 95%;
+        line-height: $font-medium;
+    }
+
+    @media (max-width: 768px) {
+        h1{
+            font-size: $font-normal;
+        }
+        span{
+            background-color: $color-04;
+            padding: 4px 5px;
+            margin-top: 10px;
+            margin-left: 5px;
+            border-radius: 20px;
+            color: $color-01;
+            font-size: .85rem;
+        }
+
+    }
+    @media (max-width: 350px){
+        h1{
+            font-size: 1.2rem;
+        }
+        p{
+            font-size: $font-small;
+            text-align: justify;
+            width: 100%;
+        }
+    }
+}

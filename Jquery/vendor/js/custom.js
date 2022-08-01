@@ -54,31 +54,17 @@ $(document).ready(function(){
       let myModal = new bootstrap.Modal($('#modelId'));
       
       myModal.show();
-   });
+   });   
    
-   $('body').on('submit','#botao', function(e){
-      
-      e.preventDefault();
-      
-      let inputs= $('input');
-      
-      if(inputs.hasClass('invalido')){
-         console.log('aaaaaa nao')
-         return false;
-      }else{
-         console.log('dios mios')
-         return true;
-      }
-      
-      
-   });
    
    var disableButton = (e) => {
       $('#botao').prop('disabled', true);
+      $('#enviou').show();
    };
    
    var ableButton = (e) => {
       $('#botao').prop('disabled', false);
+      $('#enviou').hide();
    };
    
    
@@ -121,7 +107,7 @@ $(document).ready(function(){
             cpf.removeClass('invalido');
             
             cpf.parent().find('.text-muted').hide();
-            
+
             ableButton();
             
             return true;
@@ -129,10 +115,10 @@ $(document).ready(function(){
          else
          {
             cpf.addClass('invalido');
-            
-            disableButton();
-            
+                        
             cpf.parent().find('.text-muted').show();
+
+            disableButton();
             
             return false;
          }
@@ -154,10 +140,10 @@ $(document).ready(function(){
          
          elem.removeClass('invalido');
          
-         elem.parent().find('.text-muted').hide() ;       
+         elem.parent().find('.text-muted').hide();         
          
          ableButton();
-         
+
          return true;
       }
    }
@@ -274,7 +260,8 @@ $(document).ready(function(){
          },767:{items:3.2}
       }
    });
-   
+
+ 
 });
 
 

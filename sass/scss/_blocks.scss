@@ -1,0 +1,66 @@
+.blocks {    
+    padding: 3rem 2rem;    
+
+    h2 {
+        color: $color-03;
+    }
+
+    ul {
+        list-style-type: none;
+        font-size: $font-small;
+        display: flex;
+        justify-content: space-between;
+        padding: 1rem 0;
+        width: 100%;
+    }
+
+    li {
+        color: $color-02;
+        display: block;
+        margin: $space-default auto;
+        width: 30%;
+        
+        .img-container {
+            display: block;
+            overflow: hidden;
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        a {
+            background-color: $color-01;
+            border-radius: 5px;
+            color: white;
+            display: block;
+            font-size: $font-medium;
+            margin: $font-small 0px;
+            padding: 4px 0px;
+            text-align: center;
+            text-decoration: none;
+            width: 100%;
+        }
+        a:hover{
+            background-color: $color-hover-a;
+            zoom:1.02;
+        }
+    }
+
+    @media (max-width: 768px) {
+        ul{
+            flex-direction: column;
+            align-content: center;
+            justify-items: center;
+            font-size: $font-small;
+            display: flex;
+            justify-content: space-between;
+            padding: 1rem 0;
+            width: 100%;
+        }
+        li{
+            width: 100%;
+            display: block;
+            float: none;
+        }
+    }
+
+}
