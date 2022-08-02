@@ -4,7 +4,7 @@
     padding: $space-default;
 
     .container{
-        width: 95%;
+        width: 100%;
     }
 
     
@@ -25,7 +25,7 @@
     }
 
     img {
-        width: 95%;
+        width: 100%;
         margin: $font-medium auto;
         margin-right: 8%;
         border-left: 3px solid $color-03;
@@ -36,7 +36,7 @@
         font-size: $font-normal;
         color: $color-04;
         padding: $font-normal auto;
-        width: 95%;
+        width: 100%;
         line-height: $font-medium;
     }
 
