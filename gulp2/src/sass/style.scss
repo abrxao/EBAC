@@ -1,3 +1,5 @@
+@import 'vars';
+
 
 body {
 	font-family: 'Roboto', sans-serif;
@@ -13,7 +15,7 @@ a {
 	text-decoration: none!important;
 }
 .invalido{
-	border-color:#f00;
+	border-color:$red;
 }
 
 .copyright-text {
@@ -22,8 +24,9 @@ a {
 .text-muted{
 	display: none;
 }
-.main-button a {
-	background-color: #3a8bcd;
+.main-button {
+	a {
+	background-color: $blue;
 	border-radius: 5px;
 	padding: 10px 15px;
 	display: inline-block;
@@ -34,6 +37,7 @@ a {
 	letter-spacing: 0.4px;
 	text-decoration: none;
 	transition: all 0.5s;
+	}
 }
 .main-button a:hover {
 	opacity: 0.7;
@@ -45,7 +49,7 @@ a {
 .section-heading .line-dec {
 	width: 30px;
 	height: 5px;
-	background-color: #3a8bcd;
+	background-color: $blue;
 }
 .section-heading h1 {
 	font-size: 22px;
@@ -56,7 +60,7 @@ a {
 
 /* Pre Header Style */
 #pre-header {
-	background-color: #3a8bcd;
+	background-color: $blue;
 	text-align: center;
 }
 #pre-header span {
@@ -91,7 +95,7 @@ a {
 .newsletter{
 	padding: 25px 10px;
 	width: 100%;
-	background-color: #3a8bcd;
+	background-color: $blue;
 	color: #fff;
 }
 
@@ -124,7 +128,7 @@ input#email.form-control{
 #botao{
 	width: 100%;
 	text-align: center;
-	background-color: #3a8bcd;
+	background-color: $blue;
 	color: #eee;
 }
 .newsletter .enviar form{
@@ -141,7 +145,7 @@ input#email.form-control{
 	width: 20%;
 	min-width: 134px;
 	background-color: #fff;
-	color: #3a8bcd;
+	color: $blue;
 }
 
 .enviado{
@@ -151,11 +155,11 @@ input#email.form-control{
 
 .newsletter .enviar button:hover{
 	background-color: #fff;
-	color: #3a8bcd;
+	color: $blue;
 }
 
 .col-12 input{
-	background-color: #3a8bcd;
+	background-color: $blue;
 	margin: 10px;
 	width: 60%;	
 }
@@ -192,7 +196,7 @@ input#email.form-control{
 .navbar-dark .navbar-nav .nav-link.active,
 .navbar-dark .navbar-nav .nav-link.show,
 .navbar-dark .navbar-nav .show>.nav-link {
-	color: #3a8bcd;
+	color: $blue;
 }
 .navbar:after {
 	width: 100%;
@@ -207,8 +211,8 @@ input#email.form-control{
 	background-image: none;
 }
 .navbar-dark .navbar-toggler {
-	border-color: #3a8bcd;
-	background-color: #3a8bcd;	
+	border-color: $blue;
+	background-color: $blue;	
 	height: 50px;
 	outline: none;
 }
@@ -244,7 +248,7 @@ input#email.form-control{
 .banner .caption .line-dec {
 	width: 30px;
 	height: 5px;
-	background-color: #3a8bcd;
+	background-color: $blue;
 }
 
 .newsletter .line-dec{
@@ -281,10 +285,10 @@ input#email.form-control{
 	transition: all 0.5s;
 }
 .featured-item:hover h4 {
-	color: #3a8bcd;
+	color: $blue;
 }
 .featured-item h6 {
-	color: #3a8bcd;
+	color: $blue;
 	font-size: 15px;
 	font-weight: 700;
 	margin-bottom: 10px;
@@ -297,7 +301,7 @@ input#email.form-control{
 	outline: none;
 }
 .owl-theme .owl-dots .active span {
-	background-color: #3a8bcd!important;
+	background-color: $blue!important;
 }
 .owl-theme .owl-dots .owl-dot span {
 	background-color: #aaa;
@@ -310,7 +314,7 @@ input#email.form-control{
 
 /* Subscribe Style */
 .subscribe-form {
-	background-color: #3a8bcd;
+	background-color: $blue;
 	padding: 80px 0px;
 	text-align: center;
 }
@@ -357,7 +361,7 @@ input#email.form-control{
 	border-radius: 5px;
 	padding: 10px 15px;
 	display: inline-block;
-	color: #3a8bcd;
+	color: $blue;
 	font-size: 14px;
 	text-transform: uppercase;
 	font-weight: 300;
@@ -399,7 +403,7 @@ input#email.form-control{
 	transition: all 0.5s;
 }
 .footer .footer-menu a:hover {
-	color: #3a8bcd;
+	color: $blue;
 	text-decoration: none;
 }
 .footer .social-icons {
@@ -421,7 +425,7 @@ input#email.form-control{
 	transition: all 0.5s;
 }
 .footer .social-icons a:hover {
-	background-color: #3a8bcd;
+	background-color: $blue;
 }
 
 /* Sub Footer Style */
@@ -435,7 +439,7 @@ input#email.form-control{
 	line-height: 60px;
 }
 .sub-footer a {
-	color: #3a8bcd;
+	color: $blue;
 	text-decoration: none;
 }
 
@@ -460,14 +464,14 @@ input#email.form-control{
 	transition: all 0.5s;
 }
 .featured .featured-item:hover h4 {
-	color: #3a8bcd;
+	color: $blue;
 }
 #filter button {
 	outline: none;
 }
 #filter .btn-primary.focus,
 .btn-primary:focus {
-	color: #3a8bcd!important;
+	color: $blue!important;
 	box-shadow: none!important;
 }
 #filters .btn-primary {
@@ -529,8 +533,8 @@ input#email.form-control{
 }
 .page-navigation ul li a:hover,
 .page-navigation ul li.current-page a {
-	background-color: #3a8bcd;
-	border-color: #3a8bcd;
+	background-color: $blue;
+	border-color: $blue;
 	color: #fff;
 }
 
@@ -557,7 +561,7 @@ input#email.form-control{
 	margin-top: 0px;
 }
 .single-product .right-content h6 {
-	color: #3a8bcd;
+	color: $blue;
 	font-size: 17px;
 	font-weight: 700;
 	margin-top: 10px;
@@ -568,7 +572,7 @@ input#email.form-control{
 }
 .single-product .right-content span {
 	font-size: 14px;
-	color: #3a8bcd;
+	color: $blue;
 	font-weight: 500;
 	display: inline-block;
 	margin-bottom: 15px;
@@ -593,7 +597,7 @@ input#email.form-control{
 .single-product .right-content .button {
 	margin-left: 15px;
 	cursor: pointer;
-	background-color: #3a8bcd;
+	background-color: $blue;
 	outline: none;
 	border-radius: 5px;
 	padding: 10px 15px;
@@ -621,10 +625,10 @@ input#email.form-control{
 	transition: all 0.5s;
 }
 .single-product .right-content .down-content span a:hover {
-	color: #3a8bcd;
+	color: $blue;
 }
 .single-product .right-content .down-content span a:hover i {
-	background-color: #3a8bcd;
+	background-color: $blue;
 }
 .single-product .right-content .down-content span a i {
 	transition: all 0.5s;
@@ -698,7 +702,7 @@ input#email.form-control{
 	font-weight: 400;
 }
 .about-page .right-content span a:hover i {
-	background-color: #3a8bcd;
+	background-color: $blue;
 }
 
 
@@ -753,11 +757,11 @@ input#email.form-control{
 	font-weight: 400;
 }
 .contact-page .right-content span a:hover i {
-	background-color: #3a8bcd;
+	background-color: $blue;
 }
 .contact-page .right-content .button {
 	cursor: pointer;
-	background-color: #3a8bcd;
+	background-color: $blue;
 	outline: none;
 	border-radius: 5px;
 	padding: 10px 15px;
@@ -778,11 +782,11 @@ input#email.form-control{
 .featured-item a{
 	font-weight: 600;
 	width: 100%;
-	color: #3a8bcd;
-	border-color: #3a8bcd;
+	color: $blue;
+	border-color: $blue;
 }
 .featured-item a:hover{
-	background-color: #3a8bcd;
+	background-color: $blue;
 }
 
 div.row.meu{
