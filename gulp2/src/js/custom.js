@@ -187,8 +187,7 @@ $(document).ready(function(){
    
    if ($(window).width() < 768){
       $('#carrosel').removeClass('owl-carousel');
-      $('.owl-carousel').owlCarousel('destroy');
-      
+      $('.owl-carousel').owlCarousel('destroy');      
    }
    
    $(window).resize(function(){
