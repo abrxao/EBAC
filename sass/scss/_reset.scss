@@ -1,4 +1,7 @@
+@use 'sass:math';
+
 * {
+    box-sizing: border-box;
     border: 0;
     margin: 0;
     padding: 0;
@@ -25,6 +28,7 @@ footer {
 section {
     padding: 0;
 }
+
 
 .container {
     margin: 0 auto;

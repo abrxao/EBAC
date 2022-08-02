@@ -1,11 +1,22 @@
 .blocks {    
-    padding: 3rem 2rem;    
+    
+    padding: 3rem 2rem;
 
-    h2 {
-        color: $color-03;
+    &__line-dec{
+        margin: 40px auto ;
+        margin-bottom: 10px;
+        width: 100px;
+        height: 10px;
+        background-color: $color-03hover;
+        border-radius: 5px;
     }
-
-    ul {
+    &__title {
+        text-align: center;
+        font-size: $font-big;
+        color: $color-01;
+    }
+    
+    &__list {
         list-style-type: none;
         font-size: $font-small;
         display: flex;
@@ -13,54 +24,116 @@
         padding: 1rem 0;
         width: 100%;
     }
+    
+    &__card {
 
-    li {
-        color: $color-02;
+        @mixin lvl($level:10%){
+            width: $level;
+            height: 10px;
+            background-color: $color-03;
+            margin: 0px 5%;
+            margin-top: -4px;
+            border-radius: 5px;       
+        }   
+        
+        background-color: $color-01;
+        color: $color-04;
         display: block;
         margin: $space-default auto;
-        width: 30%;
+        width: calc(92%/3);
+        border-radius: 30px;
+        border:5px solid $color-01;
+        padding: 30px;
+
+        @media(max-width: $tablet){
+            font-size: 15px;
+            border-radius: 15px;           
+        }
+    
+        &:hover{
+                background-color: $color-01hover;
+        }
+            
+            &__subtitle{
+                color:$color-04;
+                font-size: $font-medium;
+                margin-bottom: 10px;
+                @media(max-width: $tablet){
+                    font-size: $font-normal;            
+                }                            
+            }
+            
+            &__description {
+                padding: 0px 5%;
+                color: $color-04;
+                margin-top: 20px;
+            }
+            
+            &__lvl1{
+                @include lvl
+            }
+            
+            &__lvl2{
+                @include lvl(20%)
+            }
+            
+            &__lvl3{
+                @include lvl(40%)
+            }
+            &__lvl4{
+                @include lvl(70%)
+            }
+            &__lvl5{
+                @include lvl(90%)
+            }
+            
+            &__img-container {
+                display: block;
+                overflow: hidden;
+                width: 100%;
+                border-radius: 10px;
+            }
+            
+            &__button {
+                background-color: $color-03;
+                border-radius: 50px;
+                color: $color-04;
+                display: block;
+                font-size: $font-medium;
+                font-weight: 600;
+                margin: auto;
+                margin-top: 40px;
+                padding: 4px 0px;
+                text-align: center;
+                text-decoration: none;
+                width: 50%;
+                border: 4px solid $color-03;
+                @media(max-width: $tablet){
+                    width: 100%;          
+                }
+                &:hover{
+                    background-color: $color-03hover; 
+                }
+            }
+            
+        }
         
-        .img-container {
-            display: block;
-            overflow: hidden;
-            width: 100%;
-            border-radius: 10px;
+        @media (max-width: 768px) {
+            ul{
+                flex-direction: column;
+                align-content: center;
+                justify-items: center;
+                font-size: $font-small;
+                display: flex;
+                justify-content: space-between;
+                padding: 1rem 0;
+                width: 100%;
+            }
+            li{
+                width: 100%;
+                display: block;
+                float: none;
+            }
         }
-
-        a {
-            background-color: $color-01;
-            border-radius: 5px;
-            color: white;
-            display: block;
-            font-size: $font-medium;
-            margin: $font-small 0px;
-            padding: 4px 0px;
-            text-align: center;
-            text-decoration: none;
-            width: 100%;
-        }
-        a:hover{
-            background-color: $color-hover-a;
-            zoom:1.02;
-        }
+        
     }
-
-    @media (max-width: 768px) {
-        ul{
-            flex-direction: column;
-            align-content: center;
-            justify-items: center;
-            font-size: $font-small;
-            display: flex;
-            justify-content: space-between;
-            padding: 1rem 0;
-            width: 100%;
-        }
-        li{
-            width: 100%;
-            display: block;
-            float: none;
-        }
-    }
-
-}
