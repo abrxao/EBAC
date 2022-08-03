@@ -4,7 +4,7 @@
     background-color: $color-default;
     position: fixed;
     border-bottom-right-radius: 30px ;
-
+    
     &__img{
         width: $font-big;
         height: auto;
@@ -16,35 +16,38 @@
         font-size: $font-big;
         text-align: center;
     }
-
+    
     @media (max-width: $tablet) {
         margin: auto;
         padding: 2px;
         position: static;        
         border-bottom-right-radius: 0px;
         width: 100%;
-
+        
         &__title{
             margin: 15px;
             text-align: center;
         }            
-    
+        
     }
 }
 
-footer{
-    padding: 5px;
-    margin: 0px;
 
-    p{  
-        line-height: normal;
-        margin-left: 20px;
-        margin-bottom: 0px;
+
+.footer{
+    height: 40px;
+    margin: auto;
+    background-color: $color-01;
+
+    &__text{
+        padding-top: 6px;
+        color: $color-04;
+        font-weight: 600;
+        line-height: $font-big;
+        text-align: center;
     }
     
 }
 
-body{
 
-    overflow-x: hidden;
-}
+

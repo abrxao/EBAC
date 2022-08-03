@@ -78,7 +78,7 @@
         &__part2 {
             list-style-type: none;
             width: 25%;
-            padding-left: 20px;
+            padding: 0px 15px;
             margin: auto;
             display: flex;
 
@@ -88,14 +88,24 @@
                 margin: $mt-02 auto;                
             }
             
-            
+            &__line-dec{
+                width: 200%;
+                margin: auto 5%;
+                height: 15px;
+                margin-bottom: 30px;
+                background-color: $color-04;
+                @media (max-width: $destack-width){
+                    display: none;
+                }
+            }
+
             &__description{
                 @media (max-width: $destack-width){
                     display: flex;
-                    margin: $mt auto;              
+                    padding-bottom: $mt-02;            
                 }
 
-                @media (max-width: $destack-width){
+                @media (max-width: $phone){
                     display: block;          
                 }
                 
@@ -103,7 +113,7 @@
 
                 &__text{
                     @media (max-width: $destack-width){
-                        width: 45%;                       
+                        width: 55%;                       
                     }
                     @media (max-width: $phone){
                         width: 100%;                       
@@ -112,16 +122,19 @@
                     color: $color-04;
                     line-height: $font-medium;
                     text-align: justify;
+                    margin-bottom: 25px;
                 }
                 
                 &__levels{
 
                     @media (max-width: $destack-width){
-                        width: 45%;
-                        margin-left: 20px;                       
+                        width: 40%;
+                        padding: 10px;
+                        margin-left: 20px;                      
                     }
                     @media (max-width: $phone){
-                        width: 100%;                       
+                        width: 100%;                        
+                        margin-left: 0px;                   
                     }                 
 
                     &__title{
