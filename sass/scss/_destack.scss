@@ -1,67 +1,163 @@
+
 .destack {
-    
+    width: 100%;
     background-color: $color-01;
     padding: $space-default;
-
-    .container{
-        width: 100%;
+    padding-top: $mt-02;
+    
+    @media(max-width: $smart){
+        padding-top: $space-default;
     }
     
-    h1 {
+    
+    &__title {
         color: $color-04;
         text-align: center;
         font-size: $font-medium;
         margin-top: 0;
         width: 100%;
-    }
-    span{
-        background-color: $color-04;
-        padding: 8px;
-        border-radius: 20px;
-        color: $color-01;
-        font-size: $font-small;
-        margin-left: $space-default;
-    }
-
-    img {
-        width: 100%;
-        margin: $font-medium auto;
-        margin-right: 8%;
-        border-left: 3px solid $color-03;
-        padding-left: 5px;        
-
-    }
-    p {
-        font-size: $font-normal;
-        color: $color-04;
-        padding: $font-normal auto;
-        width: 100%;
-        line-height: $font-medium;
-    }
-
-    @media (max-width: 768px) {
-        h1{
+        @media (max-width: $phone){
             font-size: $font-normal;
         }
-        span{
+        &__span{
             background-color: $color-04;
-            padding: 4px 5px;
-            margin-top: 10px;
-            margin-left: 5px;
+            padding: 8px;
             border-radius: 20px;
             color: $color-01;
-            font-size: .85rem;
-        }
-
-    }
-    @media (max-width: 350px){
-        h1{
-            font-size: 1.2rem;
-        }
-        p{
             font-size: $font-small;
-            text-align: justify;
-            width: 100%;
+            margin-left: $space-default;
+            
+            @media (max-width: $phone){
+                background-color: $color-04;
+                padding: 4px 5px;
+                margin-top: 10px;
+                margin-left: 5px;
+                border-radius: 20px;
+                color: $color-01;
+                font-size: .85rem;
+            }
+        }
+    }
+    
+    &__list{
+        display: flex;
+        justify-content: center;
+        margin: $mt-02 auto;
+        list-style: none;
+        
+        @media (max-width: $destack-width){
+            display: block;
+        }
+        
+        &__part1 {
+            width: 70%;
+            overflow: hidden;            
+            max-width: 1200px;
+
+            @media (max-width: $destack-width){
+                width: 100%;
+            }
+
+            &__img-prime{
+                width: 100%;
+                border-left: 3px solid $color-03;
+                padding-left: 1%;
+                
+            }
+        }
+        
+        @mixin lvl($level:10%){
+            width: $level;
+            height: 10px;
+            background-color: $color-03;
+            border-radius: 5px;
+            margin-top: -8px;
+            margin-bottom: 12px;
+        }
+        
+        &__part2 {
+            list-style-type: none;
+            width: 25%;
+            padding: 0px 15px;
+            margin: auto;
+            display: flex;
+
+            @media (max-width: $destack-width){
+                width: 100%;
+                justify-content: center;
+                margin: $mt-02 auto;                
+            }
+            
+            &__line-dec{
+                width: 200%;
+                margin: auto 5%;
+                height: 15px;
+                margin-bottom: 30px;
+                background-color: $color-04;
+                @media (max-width: $destack-width){
+                    display: none;
+                }
+            }
+
+            &__description{
+                @media (max-width: $destack-width){
+                    display: flex;
+                    padding-bottom: $mt-02;            
+                }
+
+                @media (max-width: $phone){
+                    display: block;          
+                }
+                
+                padding-bottom: calc($mt-02*2);
+
+                &__text{
+                    @media (max-width: $destack-width){
+                        width: 55%;                       
+                    }
+                    @media (max-width: $phone){
+                        width: 100%;                       
+                    }
+
+                    color: $color-04;
+                    line-height: $font-medium;
+                    text-align: justify;
+                    margin-bottom: 25px;
+                }
+                
+                &__levels{
+
+                    @media (max-width: $destack-width){
+                        width: 40%;
+                        padding: 10px;
+                        margin-left: 20px;                      
+                    }
+                    @media (max-width: $phone){
+                        width: 100%;                        
+                        margin-left: 0px;                   
+                    }                 
+
+                    &__title{
+                        color:$color-04;
+                        padding: 0;
+                        width: 100%;
+                    }
+
+                    &__lvl{
+                        @include lvl(87%);
+                    }
+                    &__lvl1{
+                        @include lvl(60%);
+                    }
+                    &__lvl2{
+                        @include lvl(52%);
+                    }
+                    &__lvl3{
+                        @include lvl(70%);
+                    }
+
+                }
+            } 
         }
     }
 }

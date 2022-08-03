@@ -22,7 +22,6 @@ footer {
     display: block;
     margin: 0 auto;
     width: 100%;
-    padding: 4rem 0;
 }
 
 section {
@@ -44,6 +43,7 @@ body {
     font-family: $font-family-default;
     font-size: $font-small;
     color: $color-default;
+    overflow-x: hidden;
 }
 
 p {
@@ -55,9 +55,8 @@ p {
 
 h1 {
     color: $color-01;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: $font-family-default;
     font-size: $font-big;
-    margin-top: $mt-02;
 }
 
 h2 {
