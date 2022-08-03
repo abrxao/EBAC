@@ -35,7 +35,7 @@ function tarefasJS(cb){
 
     gulp.src([
             './node_modules/jquery/dist/jquery.js',
-            './node_modules/@fortawesome/fontawesome-free/js/kit.js',            
+            './vendor/js/kit.js',            
             './vendor/js/owl.js',
             /*'./vendor/js/jquery-ui.js',*/
             './vendor/js/jquery.mask.js',
