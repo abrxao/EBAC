@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap');
+
+ 
+
 $align: left;
 $bg-color: #d4d4d4;
 $color-01: #2d2d2d;
@@ -8,15 +12,18 @@ $color-03hover: #ff7544;
 $color-04: #f2f2f2;
 $color-default: #444;
 $color-hover-a: #222;
-$font-big: 3rem; 
-$font-family-default: Arial, Helvetica, sans-serif;
+$font-big: 2.8rem; 
+$font-family-default: Raleway, sans-serif;
 $font-medium: 2.2rem;
 $font-normal: 1.5rem;
 $font-small: 1.2rem;
 $mb: 1.5rem;
 $mt: 1.5rem;
 $mt-02: 3rem;
-$tablet: 768px;
+$destack-width: 1150px;
+$tablet: 912px;
+$phone:768px;
+$smart: 350px;
 $pd-lvl: 0px 5px;
 $space-default: 2rem;
 
