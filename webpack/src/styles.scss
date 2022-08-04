@@ -1,0 +1,25 @@
+$color-font: #2c1803;
+$font-default: Arial, Helvetica, sans-serif;
+
+.title {
+    text-align: center;
+    color: $color-font;
+    font-family: $font-default;
+    border-bottom: 5px double #4d4d4d;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    
+    img {
+        width: 100%;
+        height: auto;
+    }
+
+}
+
+div {
+    background-color: #e8f8d9;
+    padding: 2%;
+}
