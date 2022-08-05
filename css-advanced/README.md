@@ -1,23 +1,10 @@
-# CSS
-## Posicionamento (display)
-- block
-- inline
-- flex
-- grid
+# Lance Negócios
+Projeto para base de conhecimento de CSS Avançado.
 
-## Alinhamento
-- flex: justify-content (horizontal) 
-- flex: align-item (vertical)
-- grid: 
-
-## Direção
-- flex-direction: row / column / reverse
-- grid-template-columns
-- grid-template-rows
-
-## Posicionamento de imagens
-- object-fit: cover / contain
-- object-position
+## Atividade
+- Implementar mais seções que achar necessário.
+- Adaptar conteúdo para alguma ideia sua.
+- Use a criativadade para criar algo diferente a partir dos conceitos e códigos aprendidos.
 
 ## Projeto Base (framework simulator)
 - Baixar, instalar e rodar

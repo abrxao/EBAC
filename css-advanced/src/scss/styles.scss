@@ -1,55 +1,82 @@
-$color-font: #f2f2f2; ;
-$color-bg-default: #2E1A47;
-$color-bg-boxes: #2f2f2f;
-$font-default: Arial, Helvetica, sans-serif;
+
+
+$bold: 2px;
+$font-color-primary: #f2f2f2;
+$color-primary: #304D63;
+$font-color-secondary: #2f2f2f;
+$font-default: logoplexi, Helvetica,serif;
 $font-size-default: 1.6rem;
+$font-size-nav: 1.8rem;
+$color-secondary: #ed8975;
+$light-blue: #b2e7e8;
+$turquoise: #8fb944;
+$semi-bold: 1px;
+$yellow: #f2d096;
+@import 'fonts';
+@import url('https://fonts.googleapis.com/css2?family=Fruktur&display=swap');
+@import 'nav';
 
 html {
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
 body {
-    overflow-x: hidden;
-    background-color: $color-bg-default;
+    background-color: $color-primary;
     font-family: $font-default;
-    box-sizing: border-box;
-    color:$color-font
+    margin: 0;
 }
 
-
-
 h1 {
-    color: $color-font;
+    color: $font-color-primary;
     text-align: center;
     margin-top: 4rem;
+}
+
+article {
+
+    h1 {
+        color: $color-secondary;
+        font-size: 3rem;
+        text-align: left;
+    }
+
 }
 
 h2 {
+    color: $font-color-primary;
+    font-family: 'freshman', sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
     margin-top: 4rem;
-    text-align: center;
+    text-shadow: 1px 2px 8px #FFFFFF;
 }
 
-header,section,footer{
+#root,
+header,
+section,
+footer {
     display: block;
-    float:left;
+    float: left;
     width: 100%;
 }
-.container {   
+
+section {
+    padding: 4rem 0;
+    margin: 0;
+}
+
+.container {
     display: flex;
     flex-flow: column;
     margin: 0 auto;
     max-width: 90vw;
-    overflow: hidden;
-    border-radius: .5rem;
-  
-}
-#sobre{
-    
-    color: $color-bg-boxes;
-    .container{
-        background-color: #f2f2f2;
-    }
 }
 
-
-@import 'vitrine'
+@import 'animations';
+@import 'header';
+@import 'sobre';
+@import 'produtos';
+@import 'vitrine';
+@import 'steps';
+@import 'footer';
