@@ -2,7 +2,7 @@
 .nav {
     display: flex;
     justify-content: space-between;
-    width: 280px;
+    width: 380px;
     align-items: center;
 
     &__item {
@@ -10,10 +10,10 @@
         font-size: $font-size-nav;
         text-decoration: none;
         position: relative;
+        transition: transform 300ms ease-out;
+
         &:hover {
-            color: $color-secondary;
-            animation: toTop;
-            animation-duration: 1s;
+            transform: translate(0px, -5px);
         }
     }
 }
