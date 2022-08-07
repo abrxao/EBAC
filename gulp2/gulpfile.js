@@ -110,7 +110,7 @@ function end(cb){
     return cb()
 }
 
-const process = series(tarefasCSS, tarefasJS, tarefasHtml, tarefasSass,end);
+const process = series(tarefasCSS, tarefasJS, tarefasHtml, tarefasSass, tarefasImagem, end);
 
 exports.styles = tarefasCSS
 exports.scripts = tarefasJS
