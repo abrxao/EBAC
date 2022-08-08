@@ -6,6 +6,9 @@ footer {
             color: $color-secondary;
             text-decoration: none;
             -webkit-text-stroke-width: 1px;
+            &:hover{
+                color: $yellow;
+            }
         }
     }
 }

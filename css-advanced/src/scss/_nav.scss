@@ -1,13 +1,15 @@
 
 .nav {
     display: flex;
-    justify-content: space-between;
-    width: 380px;
+    justify-content: space-around;
     align-items: center;
 
     &__item {
+        
         color: $font-color-primary;
         font-size: $font-size-nav;
+        margin: 15px 0;
+        letter-spacing: 3px;
         text-decoration: none;
         position: relative;
         padding: 5px 5px;
