@@ -4,6 +4,8 @@ footer {
         font-size: $font-size-default;
         a {
             color: $color-secondary;
+            text-decoration: none;
+            -webkit-text-stroke-width: 1px;
         }
     }
 }

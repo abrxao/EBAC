@@ -31,6 +31,7 @@
         color: $color-secondary;
         text-align: center;
         width: 100%;
+        letter-spacing: 4px;
     }
 
     &__desc {
@@ -52,8 +53,10 @@
         text-decoration: none;
         align-self: center;
         margin-bottom: 2rem;
+        transition: transform 250ms ease-in-out, box-shadow 250ms ease-in-out;
         &:hover {
-            box-shadow: 0 0 2px 2px $color-secondary;
+            transform: scale(1.02, 1.05);
+            box-shadow: 0 0 2px 2px $color-secondary;            
         }
     }
 }

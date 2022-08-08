@@ -10,10 +10,11 @@
         font-size: $font-size-nav;
         text-decoration: none;
         position: relative;
+        padding: 5px 5px;
         transition: transform 300ms ease-out;
 
         &:hover {
-            transform: translate(0px, -5px);
+            transform: translate(0px, -4px);
         }
     }
 }

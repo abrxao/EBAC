@@ -25,13 +25,15 @@ body {
     background-color: $color-primary;
     font-family: $font-default;
     margin: 0;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
 }
 
 h1 {
     color: $font-color-primary;
     text-align: center;
     margin-top: 4rem;
+    letter-spacing: 4px;
+    
 }
 
 article {
@@ -40,6 +42,7 @@ article {
         color: $color-secondary;
         font-size: 3rem;
         text-align: left;
+        letter-spacing: 4px;
     }
 
 }
@@ -51,6 +54,7 @@ h2 {
     font-size: 2rem;
     margin-top: 4rem;
     text-shadow: 1px 2px 8px #FFFFFF;
+    letter-spacing: 4px;
 }
 
 #root,
@@ -76,6 +80,7 @@ section {
 
 @import 'animations';
 @import 'header';
+@import 'line-dec';
 @import 'sobre';
 @import 'produtos';
 @import 'vitrine';

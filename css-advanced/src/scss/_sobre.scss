@@ -1,5 +1,16 @@
 
 #sobre {
+
+    .line-dec{
+
+        width: 100%;
+        height: 8px;
+        background-image: linear-gradient(90deg, $color-primary, $color-secondary,$color-primary, $color-secondary,$color-primary, $color-secondary, $color-primary);
+        opacity: .65;
+        background-size: 200%;
+        animation: line-gradient 4200ms infinite ease;
+    }
+
     background-color: none;
     .container {
         background-color: rgba(0, 0, 0, .1);
