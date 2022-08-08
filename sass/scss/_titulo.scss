@@ -32,8 +32,6 @@
     }
 }
 
-
-
 .footer{
     height: 40px;
     margin: auto;
@@ -45,6 +43,15 @@
         font-weight: 600;
         line-height: $font-big;
         text-align: center;
+        
+        a{
+            text-decoration: none;
+            color: $color-03;
+            &:hover{
+                color:$color-03hover;
+            }
+            
+        }
     }
     
 }
