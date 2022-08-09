@@ -125,27 +125,27 @@
                 <form action="#home" id="forms"class="modal__body__forms">
 
                     <label for="name">Nome completo</label>
-                    <input type="text" id="name" placeholder="Digite seu nome completo" required>
+                    <input type="text" name="name" id="name" placeholder="Digite seu nome completo" required>
                     
                     <label for="email">E-mail</label>
-                    <input type="email" id="email" placeholder="Digite seu e-mail" required>
+                    <input type="email" name="email" id="email" placeholder="Digite seu e-mail" required>
 
                     <label for="celular">Contato</label>
-                    <input type="text" pattern="\d*" id="celular" placeholder="Digite o seu numero com DDD" required minlength="11"maxlength="11">
+                    <input type="text" pattern="\d*" name="cellphone" id="celular" placeholder="Digite o seu numero com DDD" required minlength="11"maxlength="11">
                     <p class="modal__body__forms__title" >Escolha um ou mais servicos que deseja solicitar:</p>
 
-                    <div class="modal__body__forms__checkboxes">
-                        <p class="modal__body__forms__checkboxes__alert">Selecione pelo menos um servico</p>
-                        <input type="checkbox" id="logo">
+                    <div class="modal__body__forms__checkboxes" >
+                        <p class="modal__body__forms__checkboxes__alert" id="checkboxes">Selecione pelo menos um servico</p>
+                        <input type="checkbox" name="service" id="logo">
                         <label for="logo">Logo</label><br>
 
-                        <input type="checkbox" id="papel">
+                        <input type="checkbox" name="service" id="papel">
                         <label for="papel">Papel Timbrado</label><br>
 
-                        <input type="checkbox" id="cartao">
+                        <input type="checkbox" name="service" id="cartao">
                         <label for="cartao">Cartao de visita</label><br>
 
-                        <input type="checkbox" id="site">
+                        <input type="checkbox" name="service" id="site">
                         <label for="site">Site institucional</label><br>
 
                     </div>
@@ -167,8 +167,5 @@
             </div>
         </footer>
     </div>
-
-    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
-    <script src="./js/custom.js"></script>
 </body>
 </html>

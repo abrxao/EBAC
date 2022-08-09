@@ -11,7 +11,7 @@
     &:target{
         display: flex;
     }
-
+    
     &__body{
         border-radius: 5px;
         margin: auto;
@@ -33,7 +33,7 @@
             color: $color-secondary;
             margin-top: -3%;
         }
-
+        
         &__description{
             font-size: 1.2rem;
         }
@@ -48,8 +48,12 @@
                 margin: 1% 0;
             }
             &__checkboxes{
+                
                 &__alert{
-                    display: none;
+                    visibility: hidden;
+                    height: 0;
+                    margin: 0;
+                    padding: 0;
                     text-align: center;
                     color: #f76;
                 }
@@ -83,7 +87,7 @@
             }
             
         }
-
+        
         input{
             width: 100%;
             margin: 1.5% 0;
@@ -114,10 +118,13 @@
             text-decoration: none;
             color: $color-primary;
         }
-       
+        
     }
 }
 
-.close{
-    display: none;
+.show{
+    visibility: visible;
+    height: auto;
+    width: 100%;
+    padding: auto;
 }
