@@ -13,8 +13,6 @@
         &__item{
             margin: 5%;
         }
-
-        
     }
     
     &__item {
@@ -42,10 +40,6 @@
         width: 100%;
         padding: 5%;
         min-height: 300px;
-        img{
-            max-width: 240px;
-            object-fit: cover;
-        }
     }
     
     &__title {

@@ -10,7 +10,6 @@
     @media (max-width: 1199px){
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        justify-content: space-around;
     }
     
 
@@ -24,7 +23,12 @@
         margin:1rem;
         width: calc(80% / 5 - 1rem);
         text-align: center;
-        transition: background-size 200ms ease-in,background-position 200ms ease-in;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-evenly;
+        transition: background-size 200ms ease-in;
+        
         &:hover {
             background-size: 100% 10%;
         }

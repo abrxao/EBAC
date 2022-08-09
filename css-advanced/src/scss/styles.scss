@@ -53,7 +53,6 @@ article {
 
 h2 {
     color: $font-color-primary;
-    font-family: 'freshman', sans-serif;
     font-weight: 700;
     font-size: 2rem;
     margin-top: 4rem;
@@ -85,9 +84,9 @@ section {
 @import 'animations';
 @import 'grid';
 @import 'header';
-@import 'line-dec';
 @import 'sobre';
 @import 'produtos';
 @import 'vitrine';
 @import 'steps';
 @import 'footer';
+@import 'modal';

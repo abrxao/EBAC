@@ -6,6 +6,10 @@ footer {
             color: $color-secondary;
             text-decoration: none;
             -webkit-text-stroke-width: 1px;
+            img{
+                width: 13px;
+                margin-bottom: -2px;
+            }
             &:hover{
                 color: $yellow;
             }

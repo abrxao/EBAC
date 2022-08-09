@@ -1,0 +1,114 @@
+.modal *{
+    margin: 1% 0;
+}
+.modal{
+    width: 100vw;
+    height: 100vh;
+    background-color: #00000030;
+    position: fixed;
+    display: flex;
+    
+    &:target{
+        display: flex;
+    }
+
+    &__body{
+        border-radius: 5px;
+        margin: auto;
+        width: 95%;
+        max-width: 600px;
+        background-color: $font-color-primary;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 1% 2%;
+        font-size: 1.5rem;
+        
+        
+        &__title{
+            font-size: 2rem;
+            width: 100%;
+            text-align: center;
+            color: $color-secondary;
+            margin-top: -3%;
+        }
+
+        &__description{
+            font-size: 1.2rem;
+        }
+        
+        &__forms{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            &__title{
+                color: $color-primary;
+                font-size: 1.5rem;
+                margin: 1% 0;
+            }
+            &__checkboxes{
+                input{
+                    max-width: 12px;
+                    margin-left: 5px;
+                }
+            }
+            
+            &__button{
+                align-self: center;
+                width: 250px;
+                padding: 15px 0;
+                -webkit-text-stroke: 1px;
+                letter-spacing: 5px;
+                font-size: 2rem;
+                border-radius: 5px;
+                color: #ffffff;
+                border: none;                
+                background-color: $color-secondary;
+                cursor: pointer;
+                @media(max-width: 500px){
+                    padding: 7px;
+                    width: 200px;
+                    font-size: 1.6rem;
+                }
+                
+                &:hover{
+                    opacity: .85;
+                }
+            }
+            
+        }
+
+        input{
+            width: 100%;
+            margin: 1.5% 0;
+            padding: 5px;
+            border: 1px solid $color-primary;
+            border-radius: 5px;
+            background-color: #ffffff00;
+            &::placeholder{
+                opacity: .5;
+            }
+        }
+        
+        textarea{
+            width: 100%;
+            border-radius: 5px;
+            height: 150px;
+            padding: 8px;
+            background-color: #ffffff00;
+            font-size: 1.6rem;
+            &::placeholder{
+                opacity: .5;
+            }
+        }
+        
+        &__close{
+            align-self: flex-end;
+            font-size: 3.5rem;
+            text-decoration: none;
+            color: $color-primary;
+        }
+       
+    }
+}

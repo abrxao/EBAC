@@ -9,7 +9,7 @@
 </head>
 <body>
     <div id="root">
-        <header>
+        <header id="home"> 
             <div class="container">
                 <h2 class="logo col-1">
                     <img src="./assets/images/logo-lance.png" alt="Lance Negócios">
@@ -48,7 +48,7 @@
                             </div>
                             <h3 class="vitrine__title">Logo</h3>
                             <p class="vitrine__desc">Design profissional de logos para você comecar</p>
-                            <a href="#produto-logo" class="vitrine__button">Tenho interesse</a>
+                            <a href="#modal" class="vitrine__button">Tenho interesse</a>
                         </div>
                         <div class="vitrine__item">
                             <div class="vitrine__image">
@@ -58,7 +58,7 @@
                             <p class="vitrine__desc">
                                 Aplicacao de identidade visual a seus documentos do dia a dia.
                             </p>
-                            <a href="#produto-timbrado" class="vitrine__button">Tenho interesse</a>
+                            <a href="#modal" class="vitrine__button">Tenho interesse</a>
                         </div>
                         <div class="vitrine__item">
                             <div class="vitrine__image">
@@ -68,7 +68,7 @@
                             <p class="vitrine__desc">
                                 Layout do seu cartao de visita com aquele toque profissional.   
                             </p>
-                            <a href="#produto-cartao" class="vitrine__button">Tenho interesse</a>
+                            <a href="#modal" class="vitrine__button">Tenho interesse</a>
                         </div>
                         <div class="vitrine__item">
                             <div class="vitrine__image">
@@ -78,7 +78,7 @@
                             <p class="vitrine__desc">
                                 Desenvolvimento de site com a sua identidade visual aplicada.
                             </p>
-                            <a href="#produto-site" class="vitrine__button">Tenho interesse</a>
+                            <a href="#modal" class="vitrine__button">Tenho interesse</a>
                         </div>
                     </div>
                 </article>
@@ -115,14 +115,58 @@
             </div>
         </section>
 
+        <div class="modal" id="modal">
+            <div class="modal__body">
 
+                <a href="#produtos" class="modal__body__close">&times;</a>
+                <h2 class="modal__body__title">Bem-vindo a Lance ME</h2>
+                <p class="modal__body__description">Preencha as informacoes e fale um pouco sobre o que procura.</p>
+
+                <form action="" id="forms"class="modal__body__forms">
+
+                    <label for="name">Nome completo</label>
+                    <input type="text" id="name" placeholder="Digite seu nome completo">
+                    
+                    <label for="email">E-mail</label>
+                    <input type="e-mail" id="email" placeholder="Digite seu e-mail">
+
+                    <label for="celular">Telefone</label>
+                    <input type="text" id="celular" placeholder="Digite telefone">
+
+                    <p class="modal__body__forms__title">Escolha um ou mais servicos que deseja solicitar:</p>
+
+                    <div class="modal__body__forms__checkboxes">
+                        <input type="checkbox" id="logo">
+                        <label for="logo">Logo</label><br>
+
+                        <input type="checkbox" id="papel">
+                        <label for="papel">Papel Timbrado</label><br>
+
+                        <input type="checkbox" id="cartao">
+                        <label for="cartao">Cartao de visita</label><br>
+
+                        <input type="checkbox" id="site">
+                        <label for="site">Site institucional</label><br>
+
+                    </div>
+
+                    <label for="desc"></label>
+                    <textarea id="desc" cols="30" rows="10" placeholder="Faça uma descrição do que precisa e tire sua dúvidas aqui"></textarea>
+
+                    <button type="submit" class="modal__body__forms__button" >ENVIAR</button>
+
+                </form>
+            </div>
+        </div>
 
         <footer>
             <div class="container">
                 <p>&copy; Todos os direitos reservados. <br>
-                <small>Desenvolvido por <a href="https://github.com/abrxao">Abraao</a>.</small></p>
+                <small>Desenvolvido por <a href="https://github.com/abrxao">Abraao<img src="./assets/images/github.png" alt=""></a></small></p>
             </div>
         </footer>
     </div>
+
+    <script src="./js/custom.js"></script>
 </body>
 </html>
