@@ -6,7 +6,7 @@
     height: 100vh;
     background-color: #00000030;
     position: fixed;
-    display: flex;
+    display: none;
     
     &:target{
         display: flex;
@@ -48,6 +48,11 @@
                 margin: 1% 0;
             }
             &__checkboxes{
+                &__alert{
+                    display: none;
+                    text-align: center;
+                    color: #f76;
+                }
                 input{
                     max-width: 12px;
                     margin-left: 5px;
@@ -111,4 +116,8 @@
         }
        
     }
+}
+
+.close{
+    display: none;
 }

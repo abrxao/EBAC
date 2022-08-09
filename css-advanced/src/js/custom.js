@@ -1,8 +1,16 @@
-const button = document.getElementsByClassName('modal__body__forms__button');
-const modal = document.getElementsByClassName('modal');
 
-console.log(modal);
+$(document).ready(function() {
+  
+  $('#forms').submit(function(e) {
+    for(let i=0; i<3; i++) {
+      if($('.modal__body__forms__checkboxes input').is(':checked')){
+        $('.modal__body__forms__checkboxes__alert').hide();
+        
+      }else{
+        $('.modal__body__forms__checkboxes__alert').show();
+        e.preventDefault();
+      }
+    }
+    });
 
-if(modal.style.display==='flex'){
-  modal.style.display='none';
-}
+  });
