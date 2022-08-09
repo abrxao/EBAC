@@ -36,10 +36,20 @@
     
     &__image {
         justify-content: center;
+        align-items: center;
+        margin: auto;
         display: flex;
         width: 100%;
         padding: 5%;
         min-height: 300px;
+        @media (max-width:350px){
+            padding: 0;
+            min-height: 250px;
+            img{
+                
+                max-height: 200px;
+            }
+        }
     }
     
     &__title {

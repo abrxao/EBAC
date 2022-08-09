@@ -15,4 +15,9 @@ footer {
             }
         }
     }
+    @media(max-width:499px){
+        p{
+            font-size: 1.3rem;
+        }
+    }
 }

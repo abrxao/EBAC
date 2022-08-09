@@ -11,13 +11,18 @@
     <div id="root">
         <header id="home"> 
             <div class="container">
-                <h2 class="logo col-1">
+                <h2 class="logo col-1 colsm-10">
                     <img src="./assets/images/logo-lance.png" alt="Lance Negócios">
                 </h2>
-                <nav class="nav col-4">
+                <a class="container__menu colsm-2" href="#nav"><img src="./assets/images/menu.png" alt="Botão Menu"></a>
+
+                <nav id="nav" class="nav col-4">
+
+                    <a href="#home" class="nav__close">&times;</a>
                     <a class="nav__item" href="#sobre">Sobre</a>
                     <a class="nav__item" href="#produtos">Produtos</a>
                     <a class="nav__item" href="#como-funciona">Como funciona</a>
+
                 </nav>
                 <div class="hero">
                     <h1>Veja como acelerar a criacao do seu negócio</h1>
@@ -106,7 +111,7 @@
                             <img src="./assets/images/voce-aprova.png" alt="Você aprova">
                             <h3 class="step__item__description">Em poucos dias você recebará o trabalho pronto para avaliar.</h3>
                         </div>
-                        <div class="steps__item">
+                        <div class="steps__item steps__item" >
                             <img src="./assets/images/lancamos.png" alt="Lance seu negócio">
                             <h3 class="step__item__description">Se estiver tudo ok para você, você lanca seu negócio <span>=)</span></h3>
                         </div>

@@ -1,36 +1,82 @@
 
 header .container {
-
+    
     justify-content: space-between;
     flex-direction: row;
     flex-wrap: wrap;
+
+    &__menu{
+        color: $font-color-primary;
+        font-size: 3rem;
+        text-decoration: none;
+        align-self: center;
+
+        img{
+            width: 20px;
+        }
+        @media(min-width:371px){
+            display: none;
+            width: 0;
+            margin: 0;
+            padding: 0;
+            visibility: hidden;
+
+        }
+    }
     h2{
         text-align: center;
         @media (max-width: 767px) {
             margin: 20px;
             img{
-            width: 90px;
+                width: 90px;
+            }
         }
+        @media (max-width: 370px) {
+            text-align: left;
         }
         
     }
-
+    
     .hero {
         align-items: flex-end;
         background-image: url('../assets/images/banner-lance-me.png');
         background-repeat: no-repeat;
         background-position: top center;
-        height: 45rem;
+        height: 48rem;
         display: flex;
         padding-bottom: 4rem;
         width: 100%;
-
         h1 {
             padding: 1rem 0 0;
             text-align: center;
             width: 100%;
-            font-size: 3rem;
+            font-size: 2.7rem;
+        }
+
+        @media(max-width:1199px){
+            h1{
+                font-size: 2.2rem;
+            }
+        }
+
+        @media(max-width:768px){
+            height: 43rem ;
+            background-size: 100vh;
+            padding-bottom: 2.5rem;
+            h1{
+                padding-top: 2%;
+                font-size: 2.4rem;
+            }
+        }
+        @media(max-width:370px){
+            height: 39rem ;
+            background-size: 110vh;
+            h1{
+                font-size: 1.7rem;
+            }
         }
     }
-
+    
+    
+    
 }

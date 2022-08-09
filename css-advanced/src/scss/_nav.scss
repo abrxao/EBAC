@@ -1,22 +1,78 @@
 
 .nav {
-    display: flex;
+    display: grid;
     justify-content: space-around;
     align-items: center;
+    grid-template-columns: 1fr 1.2fr 1.7fr;
+    max-width: 450px;
+    @media(max-width:767px){
+        max-width: 100%;
+    }
+    
+    &__close{
+        color: $font-color-primary;
+        font-size: 3rem;
+        text-decoration: none;
+        align-self: center;
 
+        img{
+            width: 20px;
+        }
+        @media(min-width:370px){
+            display: none;
+            width: 0;
+            margin: 0;
+            padding: 0;
+            visibility: hidden;
+
+        }
+    }
+    
     &__item {
-        
+        text-align: center;
+        width: 100%;        
         color: $font-color-primary;
         font-size: $font-size-nav;
         margin: 15px 0;
         letter-spacing: 3px;
         text-decoration: none;
-        position: relative;
         padding: 5px 5px;
         transition: transform 300ms ease-out;
-
+        
         &:hover {
             transform: translate(0px, -4px);
         }
+        
+        @media(max-width:470px){
+            font-size: 1.7rem;
+            letter-spacing: 1px;
+            margin-bottom: 30px;
+        }
+        @media(max-width:370px){
+            text-align: center;
+            margin: 5px;
+        }
     }
+
+    @media(max-width:370px){
+        
+        display: flex;
+        position: fixed;
+        border-radius: 30px;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        padding-bottom:15px ;
+        flex-direction: column;
+        background-color: $color-secondary;
+        transition: top 300ms ease-in;
+        top:-200px;
+        left: 0;
+        z-index: 1;
+
+        
+        &:target{
+            top:0px;
+        }
+    }
+    
 }

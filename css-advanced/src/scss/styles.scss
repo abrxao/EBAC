@@ -47,6 +47,9 @@ article {
         font-size: 3rem;
         text-align: left;
         letter-spacing: 4px;
+        @media(max-width:350px){
+            font-size: 2.4rem;
+        }
     }
 
 }
@@ -58,6 +61,9 @@ h2 {
     margin-top: 4rem;
     text-shadow: 1px 2px 8px #FFFFFF;
     letter-spacing: 4px;
+    @media(max-width:350px){
+        font-size: 1.8rem;
+    }
 }
 
 #root,
@@ -72,6 +78,10 @@ footer {
 section {
     padding: 4rem 0;
     margin: 0;
+
+    @media(max-width:350px){
+        padding: 2.5rem 0;
+    }
 }
 
 .container {
