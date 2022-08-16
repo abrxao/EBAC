@@ -1,7 +1,4 @@
-    *{
-        box-sizing: border-box;
-    }
-
+    
     .modal {
         top:0;
         margin:auto;
@@ -22,7 +19,8 @@
         }
 
         &__body{
-            width: 50%;
+            width: 95vh;
+            max-width: 860px;
             background-color: $color-01;
             color: $color-04;
             border-radius: 30px;
@@ -38,11 +36,10 @@
             &__title{
                 font-size: 4rem;
                 text-align: center;
-                margin-top: -2.5%;
             }
 
             &__text{
-                width: 87%;
+                width: 90%;
                 letter-spacing: 2px;
                 color: $color-04;
                 text-align: justify;
@@ -53,6 +50,10 @@
                 object-fit: cover;
                 width: 87%;
                 margin: 3% 0;
+                &--inverted{
+                    transform: scaleX(-1);
+                }
+                
                 
             }
             &__close{
@@ -60,38 +61,47 @@
                 color: $color-04;
                 align-self: flex-end;
                 font-size: 6rem;
-                margin-bottom: -2rem;
+                height: 3rem;
                 margin-right: 1.8%;
             }
 
             @media (max-width:1199px){
-                &__body{
-                width: 98%; 
+                margin-top: -4%;
+                max-width: 740px;
+                padding: 1% 0%;
+                &__image{
+                    width: 90%;
+                    max-height:320px;
+                    min-height: 150px;
+                    overflow: hidden;
+                    display: flex;
+                    align-items: center;
+                    img{
+                        margin-top: -50px;
+                    }
+                     
+                    &:hover img{
+                        scale: 1.3;
+
+                    }
+                                        
                 }
                 
             }
             @media(max-width:1024px){
-                width: 95%;
-                margin: auto;
+                max-height: 92vh;
             
                 &__title{
                     font-size: 2.8rem;
                 }
-                &__image{
-                    width: 58%;
-                    
-                }
+                
 
             }
             @media(max-width:992px){
-                width: 90%;
-                margin: auto;
+                width: 100vh;
             
                 &__title{
                     font-size: 2.5rem;
-                }
-                &__image{
-                    width: 90%;
                 }
                 &__text{
                     width: 90%;
@@ -106,17 +116,17 @@
 
             @media(max-width:450px){
                 width: 96%;
+                padding: 1.5%;
                 padding-bottom: 3%;
+                padding-top: 0;
                 &__title{
                     font-size: 2rem;
-                    margin-top: -12%;
                 }
                 &__text{
                     font-size: 1.1rem;
                 }
-                &__close{
-                    margin-bottom: 1%;
-                    margin-top: 0;
+                &__image{
+                    width: 90%;
                 }
             }  
         }

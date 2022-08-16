@@ -1,7 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap');
 
- 
-
 $align: left;
 $bg-color: #d4d4d4;
 $color-01: #2d2d2d;
@@ -26,6 +24,10 @@ $phone:768px;
 $smart: 350px;
 $pd-lvl: 0px 5px;
 $space-default: 2rem;
+
+*{
+    box-sizing: border-box;
+}
 
  
 

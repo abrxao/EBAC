@@ -1,6 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap");
 * {
   box-sizing: border-box;
+}
+
+* {
+  box-sizing: border-box;
   border: 0;
   margin: 0;
   padding: 0;
@@ -236,10 +240,6 @@ footer {
   background-color: #ff7544;
 }
 
-* {
-  box-sizing: border-box;
-}
-
 .modal {
   top: 0;
   margin: auto;
@@ -259,7 +259,8 @@ footer {
   display: flex;
 }
 .modal__body {
-  width: 50%;
+  width: 95vh;
+  max-width: 860px;
   background-color: #2d2d2d;
   color: #f2f2f2;
   border-radius: 30px;
@@ -273,10 +274,9 @@ footer {
 .modal__body__title {
   font-size: 4rem;
   text-align: center;
-  margin-top: -2.5%;
 }
 .modal__body__text {
-  width: 87%;
+  width: 90%;
   letter-spacing: 2px;
   color: #f2f2f2;
   text-align: justify;
@@ -287,41 +287,52 @@ footer {
   width: 87%;
   margin: 3% 0;
 }
+.modal__body__image--inverted {
+  transform: scaleX(-1);
+}
 .modal__body__close {
   text-decoration: none;
   color: #f2f2f2;
   align-self: flex-end;
   font-size: 6rem;
-  margin-bottom: -2rem;
+  height: 3rem;
   margin-right: 1.8%;
 }
 @media (max-width: 1199px) {
-  .modal__body__body {
-    width: 98%;
+  .modal__body {
+    margin-top: -4%;
+    max-width: 740px;
+    padding: 1% 0%;
+  }
+  .modal__body__image {
+    width: 90%;
+    max-height: 320px;
+    min-height: 150px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+  }
+  .modal__body__image img {
+    margin-top: -50px;
+  }
+  .modal__body__image:hover img {
+    scale: 1.3;
   }
 }
 @media (max-width: 1024px) {
   .modal__body {
-    width: 95%;
-    margin: auto;
+    max-height: 92vh;
   }
   .modal__body__title {
     font-size: 2.8rem;
   }
-  .modal__body__image {
-    width: 58%;
-  }
 }
 @media (max-width: 992px) {
   .modal__body {
-    width: 90%;
-    margin: auto;
+    width: 100vh;
   }
   .modal__body__title {
     font-size: 2.5rem;
-  }
-  .modal__body__image {
-    width: 90%;
   }
   .modal__body__text {
     width: 90%;
@@ -335,18 +346,18 @@ footer {
 @media (max-width: 450px) {
   .modal__body {
     width: 96%;
+    padding: 1.5%;
     padding-bottom: 3%;
+    padding-top: 0;
   }
   .modal__body__title {
     font-size: 2rem;
-    margin-top: -12%;
   }
   .modal__body__text {
     font-size: 1.1rem;
   }
-  .modal__body__close {
-    margin-bottom: 1%;
-    margin-top: 0;
+  .modal__body__image {
+    width: 90%;
   }
 }
 
