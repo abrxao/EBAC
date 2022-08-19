@@ -58,8 +58,7 @@ const inputs= document.querySelectorAll('input');
 const button= document.querySelector('#send');
 
 button.addEventListener('click', ()=>{
-    document.querySelector('.resultForeach').innerHTML ="<h2>Resultados</h2><br>";
-    document.querySelector('.resultForeach').innerHTML+="";
+    document.querySelector('.resultForeach').innerHTML="";
     inputs.forEach((a)=>{
             document.querySelector('.resultForeach').innerHTML += a.value.replaceAll('a','o') + "<br>";
         });
@@ -98,14 +97,14 @@ console.log("Seu saldo do mês é "+saldo.valor)
 //USANDO FILTER
 
 const btn2= document.querySelector('#send2');
-const filter= document.querySelector('.resultFilter');
+const resultFilter= document.querySelector('.resultFilter');
 
 btn2.addEventListener('click', ()=>{
-    filter.innerHTML ="<h2>Resultados</h2><br>";
+    resultFilter.innerHTML ="";
     var slc = document.getElementById("slc");
     carros.filter((a)=>{
         if(a.marca==slc.value){
-            filter.innerHTML += "Marca: "+a.marca+"<br>"+"Nome: "+a.nome+"<br>"+"Ano: "+a.ano+"<br><br>"
+            resultFilter.innerHTML += "<div class='result'>Marca: "+a.marca+"<br>"+"Nome: "+a.nome+"<br>"+"Ano: "+a.ano+"</div>"
         }
     }) 
 });
