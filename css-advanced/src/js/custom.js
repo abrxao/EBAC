@@ -17,7 +17,6 @@ forms.addEventListener('submit', function(e){
     }
     else{      
       checkboxes.classList.add('show');
-      console.log('aaaaaaaaaa');
     }
   }
 });

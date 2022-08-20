@@ -24,10 +24,6 @@ $(document).ready(function(){
    // $('.featured-item:first h4').fadeOut()
    //  $('.featured-item:first h4').css('color', '#f00')
    
-   
-   
-   
-   
    /*
    * Manipulação de eventos
    */
@@ -38,8 +34,6 @@ $(document).ready(function(){
       alert('Produto esgotado');
       
    })*/
-   
-   
    
    $('.nav-modal-open').on('click', function(e){
       

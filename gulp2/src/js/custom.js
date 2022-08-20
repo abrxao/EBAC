@@ -1,7 +1,7 @@
 // instancia jquery e evita conflitos
 // jQuery( function($){
 $(document).ready(function(){
-      
+   
    $('.featured-item a').addClass('btn btn-outline-primary stretch-link');   
       
    $('.nav-modal-open').on('click', function(e){
