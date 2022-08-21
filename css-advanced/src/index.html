@@ -15,21 +15,21 @@
                     <img src="./assets/images/logo-lance.png" alt="Lance Negócios">
                 </h2>
                 <a class="container__menu" href="#nav"><img src="./assets/images/menu.png" alt="Botão Menu"></a>
-
+                
                 <nav id="nav" class="nav col-4">
-
+                    
                     <a href="#home" class="nav__close">&times;</a>
                     <a class="nav__item" href="#sobre">Sobre</a>
                     <a class="nav__item" href="#produtos">Produtos</a>
                     <a class="nav__item" href="#como-funciona">Como funciona</a>
-
+                    
                 </nav>
                 <div class="hero">
                     <h1>Veja como acelerar a criacao do seu negócio</h1>
                 </div>
             </div>
         </header>
-
+        
         
         <section id="sobre">
             <div class="line-dec"></div>    
@@ -41,7 +41,7 @@
                 </article>
             </div>
         </section>
-
+        
         <section id="produtos">
             <div class="container">
                 <article>
@@ -89,7 +89,7 @@
                 </article>
             </div>
         </section>
-
+        
         <section id="como-funciona">
             <div class="container">
                 <article>
@@ -119,60 +119,76 @@
                 </article>
             </div>
         </section>
-
+        
         <div class="modal" id="modal">
             <div class="modal__body">
-
+                
                 <a href="#produtos" class="modal__body__close">&times;</a>
                 <h2 class="modal__body__title">Bem-vindo a Lance ME</h2>
                 <p class="modal__body__description">Preencha as informacoes e fale um pouco sobre o que procura.</p>
-
+                
                 <form action="#home" id="forms"class="modal__body__forms">
-
+                    
                     <label for="name">Nome completo</label>
                     
                     <input type="text" name="name" id="name" placeholder="Digite seu nome completo" required>
                     
                     <label for="email">E-mail</label>
                     <input type="email" name="email" id="email" placeholder="Digite seu e-mail" required>
-
+                    
                     <label for="celular">Contato</label>
                     <input type="text" pattern="\d*" name="cellphone" id="celular" placeholder="Digite o seu numero com DDD" required minlength="11"maxlength="11">
                     <p class="modal__body__forms__title" >Escolha um ou mais servicos que deseja solicitar:</p>
-
+                    
                     <div class="modal__body__forms__checkboxes" >
                         <p class="modal__body__forms__checkboxes__alert" id="checkboxes">Selecione pelo menos um servico</p>
                         
                         <input type="checkbox" name="service" id="logo">
                         <label for="logo">Logo</label><br>
-
+                        
                         <input type="checkbox" name="service" id="papel">
                         <label for="papel">Papel Timbrado</label><br>
-
+                        
                         <input type="checkbox" name="service" id="cartao">
                         <label for="cartao">Cartao de visita</label><br>
-
+                        
                         <input type="checkbox" name="service" id="site">
                         <label for="site">Site institucional</label><br>
-
+                        
                     </div>
-
+                    
                     <label for="desc"></label>
                     <textarea id="desc" cols="30" rows="10" placeholder="Faça uma descrição do que precisa e tire sua dúvidas aqui" required></textarea>
-
+                    
                     <button type="submit" class="modal__body__forms__button">ENVIAR</button>
-
+                    
                 </form>
-
+                
             </div>
         </div>
-
-        <footer>
-            <div class="container">
-                <p>&copy; Todos os direitos reservados. <br>
-                <small>Desenvolvido por <a href="https://github.com/abrxao">Abraao<img src="./assets/images/github.png" alt=""></a></small></p>
+        
+        <div class="modal-desc" id="modal-desc">
+            <div class="modal-desc__body">
+                <a class="modal-desc__body__close"href="">&times</a>
+                <h1 class="modal-desc__body__title">Descricao do projeto</h1>
+                <p class="modal-desc__body__desc">
+                    Resultado de um code-togheter no curso da EBAC. Nesse projeto de SPA o meu foco foi ajustar a paleta de cores para uma mais agradável, ajustar as animações, deixar totalmente responsivo e adicionar um modal com formulário para captação de dados. <br><br>
+                    Primeiramente, alterei as variáveis do arquivo principal SCSS e ajustei o HTML e o CSS ao padrão BEMCSS. Em seguida, alterei a paleta de cores das imagens com o Photoshop, já que todas vieram de um repositório padrão. Passei para o desenvolvimento do formulário e, por último, adicionei esse modal de descrição. <br><br>
+                    Usei o simulador de framework feito ao longo do curso para minificação de CSS, scripts, HTML e compactação de imagens. Foi adicionado também a ele um plugin de server que atualizava a página automaticamente a cada alteração nos arquivos para otimizar a velocidade de desenvolvimento.
+                    </p>
+                    <a class="modal-desc__body__gitlink" href="https://github.com/abrxao/EBAC/tree/main/css-advanced"> Link do repositório<img src="./assets/images/github.png" alt=""> <a>
+                    
+                </div>
             </div>
-        </footer>
-    </div>
-</body>
-</html>
+            
+            <a href="#modal-desc" class="tec-use" >?</a>
+            
+            <footer>
+                <div class="container">
+                    <p>&copy; Todos os direitos reservados. <br>
+                        <small>Desenvolvido por <a href="https://github.com/abrxao">Abraao<img src="./assets/images/github.png" alt=""></a></small></p>
+                    </div>
+                </footer>
+            </div>
+        </body>
+        </html>

@@ -25,6 +25,9 @@ header .container {
     }
     h2{
         text-align: center;
+        &:hover{
+            cursor: pointer;
+        }
         @media (max-width: 767px) {
             margin: 20px;
             img{
