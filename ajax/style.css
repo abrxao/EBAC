@@ -1,0 +1,189 @@
+html {
+  font-size: 62.5%;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+
+body * {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e2e2e2;
+  padding: 0;
+  margin: 0;
+}
+
+.main {
+  width: 80%;
+  min-height: 100vh;
+  padding: 30px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+}
+.main input {
+  background-color: #e2e2e2;
+  padding: 8px;
+  border: 3px solid rgba(255, 255, 255, 0);
+  border-radius: 5px;
+  margin: 4% 0px;
+  box-shadow: -2px -2px 4px rgba(255, 255, 255, 0.8666666667), 2px 2px 4px rgba(102, 102, 102, 0.4666666667), inset -2px -2px 4px rgba(255, 255, 255, 0.8666666667), inset 2px 2px 4px rgba(102, 102, 102, 0.4666666667);
+}
+
+.cep {
+  min-height: 250px;
+}
+
+.perfil {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-auto-rows: 100px;
+  gap: 10px;
+}
+.perfil__disable {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.perfil__window {
+  position: absolute;
+  border-radius: 50%;
+  margin: auto;
+  width: 100%;
+  height: 0%;
+  background: linear-gradient(45deg, rgb(215, 82, 255) 0%, rgb(0, 255, 102) 100%);
+  top: 50%;
+  z-index: 1;
+  border-width: 50%;
+}
+.perfil__info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding: 15px;
+}
+.perfil__info:ntt-child(1) {
+  pointer-events: none;
+}
+.perfil__destack {
+  overflow: hidden;
+  position: relative;
+  justify-content: center;
+  margin: auto;
+  width: 200px;
+  grid-column-start: 1;
+  grid-column-end: 6;
+  grid-row-start: 1;
+  grid-row-end: 4;
+  border: 3px solid rgba(255, 255, 255, 0);
+  border-radius: 6px;
+  box-shadow: -4px -4px 8px rgba(255, 255, 255, 0.8666666667), 4px 4px 8px rgba(102, 102, 102, 0.4666666667);
+}
+.perfil__destack img {
+  max-width: 150px;
+  max-height: 150px;
+  border-radius: 5px;
+}
+.perfil__card {
+  overflow: hidden;
+  position: relative;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  width: 60px;
+  cursor: pointer;
+  background: linear-gradient(45deg, rgba(215, 82, 255, 0.2609418768) 0%, rgba(0, 255, 102, 0.193714986) 100%);
+  padding: 5px;
+  box-shadow: -3px -3px 5px rgba(255, 255, 255, 0.8666666667), 3px 3px 5px rgba(102, 102, 102, 0.4666666667);
+}
+.perfil__card img {
+  width: 50px;
+  filter: grayscale(100%);
+  border-radius: 50%;
+}
+.perfil__card:hover img {
+  opacity: 1;
+  filter: grayscale(0%);
+}
+.perfil__card h3, .perfil__card p {
+  display: none;
+}
+
+.load {
+  width: 100px;
+  height: 20px;
+  box-shadow: -2px -2px 4px rgba(255, 255, 255, 0.8666666667), 2px 2px 4px rgba(102, 102, 102, 0.4666666667);
+  position: relative;
+  overflow: hidden;
+  border: 3px solid #e2e2e2;
+  border-radius: 5px;
+}
+.load h4 {
+  text-align: center;
+}
+.load__blank {
+  width: 25%;
+  height: 100%;
+  opacity: 0.7;
+  background-color: #ffffff;
+  position: absolute;
+  left: -25%;
+  border: 4px solid #ffffff;
+  border-radius: 4px;
+  animation: loading 1.5s ease-in-out infinite;
+}
+.load__blank:nth-child(2) {
+  animation-delay: 0.75s;
+}
+
+@keyframes switchEnd {
+  0% {
+    border-radius: 0;
+  }
+  50% {
+    top: 0%;
+    height: 100%;
+  }
+  100% {
+    border-radius: 0;
+  }
+}
+@keyframes switchRot {
+  0% {
+    top: 50%;
+    width: 0%;
+  }
+  50% {
+    top: 0%;
+    width: 100%;
+    height: 100%;
+  }
+  100% {
+    top: 50%;
+    width: 0%;
+    transform: rotate(360deg);
+  }
+}
+@keyframes loading {
+  100% {
+    left: 100%;
+  }
+}
+.boxDarkBorder {
+  background-color: #2d2d2d !important;
+  color: #e2e2e2 !important;
+  box-shadow: -2px -2px 4px rgba(170, 170, 170, 0.1843137255), 2px 2px 4px rgba(0, 0, 0, 0.6), inset -2px -2px 4px rgba(170, 170, 170, 0.1843137255), inset 2px 2px 4px rgba(0, 0, 0, 0.6) !important;
+}
+
+/*# sourceMappingURL=style.css.map */
