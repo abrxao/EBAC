@@ -17,8 +17,6 @@ body *{
     outline: none;
 }
 
-
-
 body{
     display: flex;
     justify-content: center;
@@ -36,6 +34,19 @@ body{
     align-items: center;
     justify-content: space-around;
     flex-direction: column;
+    
+}
+.cep{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    min-height: 250px;
+    box-shadow: 
+    -2px -2px 4px $neoSdwLgt1,
+    2px 2px 4px $neoSdwLgt2;
+    padding: 18px;
+    border-radius: 8px;
     input{
         background-color: $colorLight;
         padding: 8px;
@@ -47,11 +58,15 @@ body{
         2px 2px 4px $neoSdwLgt2,
         inset -2px -2px 4px $neoSdwLgt1,
         inset 2px 2px 4px $neoSdwLgt2;
-     
+        
     }
-}
-.cep{
-    min-height: 250px;
+    &__result{
+        padding: 12px;
+        height: 25vh;
+        width: 100%;
+        box-shadow: inset -2px -2px 4px $neoSdwLgt1,
+        inset 2px 2px 4px $neoSdwLgt2;;
+    }
 }
 
 .perfil {
@@ -59,35 +74,34 @@ body{
     grid-template-columns: repeat(5, 1fr);
     grid-auto-rows: 100px;
     gap: 10px;
-    
     &__disable{
         position: absolute;
         width: 100%;
         height: 100%;
     }
-
+    
     &__window{
         position: absolute;
         border-radius: 50%;
         margin: auto;
-        width: 100%;
         height: 0%;
-        background: linear-gradient(45deg, rgba(215,82,255,1) 0%, rgba(0,255,102,1) 100%);
-        top:50%;
+        background: linear-gradient(45deg, rgba(2,0,36,1) 0%, rgba(244,205,255,1) 0%, rgba(179,255,209,1) 100%);
         z-index: 1;
-        border-width: 50%;
     }
     &__info{
         display: flex;
         flex-direction: column;
         align-items: center;
+        padding: 15px 8px;
         gap: 8px;
-        padding: 15px;
         &:ntt-child(1){
             pointer-events: none;
         }
+        img{
+            margin: auto;
+        }
     }
-
+    
     &__destack{
         overflow: hidden;
         position: relative;
@@ -101,12 +115,13 @@ body{
         border: 3px solid #ffffff00;
         border-radius: 6px;
         box-shadow: 
-        -4px -4px 8px $neoSdwLgt1,
-        4px 4px 8px $neoSdwLgt2;
+        -3px -3px 6px $neoSdwLgt1,
+        3px 3px 6px $neoSdwLgt2;
         img{
             max-width: 150px;
             max-height: 150px;
-            border-radius: 5px;
+            border-radius: 25px;
+            border: 2px solid #2d2d2d20;
         }
     }
     &__card{
@@ -120,7 +135,7 @@ body{
         height: 60px;
         width: 60px;
         cursor: pointer;
-        background: linear-gradient(45deg, rgba(215,82,255,0.26094187675070024) 0%, rgba(0,255,102,0.19371498599439774) 100%);
+        background: linear-gradient(45deg, rgba(2,0,36,1) 0%, rgba(244,205,255,1) 0%, rgba(179,255,209,1) 100%);
         padding: 5px;
         box-shadow: 
         -3px -3px 5px $neoSdwLgt1,
@@ -129,6 +144,7 @@ body{
             width: 50px;
             filter: grayscale(100%);
             border-radius: 50%;
+            transition: 0.4s;
         }
         &:hover img{
             opacity: 1;
@@ -138,7 +154,7 @@ body{
             display: none;
         }
     }
-  }
+}
 
 .load{
     width: 100px;
@@ -170,14 +186,21 @@ body{
 }
 @keyframes switchEnd{
     0%{
+        width: 105%;
+        top:50%;
         border-radius: 0;
-        
     }
-    50%{
-        top: 0%;
-        height:100%;
+    47%{
+        height: 105%;
+        top:-2.5%;
+    }
+    53%{
+        height: 105%;
+        top:-2.5%;
     }
     100%{
+        width: 105%;
+        top:50%;
         border-radius: 0;
     }
 }
@@ -186,7 +209,6 @@ body{
         top:50%;
         width: 0%;
     }
-
     50%{
         top:0%;
         width: 100%;
@@ -195,7 +217,7 @@ body{
     100%{
         top:50%;
         width: 0%;
-        transform: rotate(360deg);
+        transform: rotate(405deg);
     }
 }
 @keyframes loading {
@@ -208,9 +230,9 @@ body{
     background-color: $colorDark !important;
     color:$colorLight !important;
     box-shadow: 
-        -2px -2px 4px $neoSdwDrk1,
-        2px 2px 4px $neoSdwDrk2,
-        inset -2px -2px 4px $neoSdwDrk1,
-        inset 2px 2px 4px $neoSdwDrk2 !important;
+    -2px -2px 4px $neoSdwDrk1,
+    2px 2px 4px $neoSdwDrk2,
+    inset -2px -2px 4px $neoSdwDrk1,
+    inset 2px 2px 4px $neoSdwDrk2 !important;
     
 }

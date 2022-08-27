@@ -28,7 +28,18 @@ body {
   justify-content: space-around;
   flex-direction: column;
 }
-.main input {
+
+.cep {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  min-height: 250px;
+  box-shadow: -2px -2px 4px rgba(255, 255, 255, 0.8666666667), 2px 2px 4px rgba(102, 102, 102, 0.4666666667);
+  padding: 18px;
+  border-radius: 8px;
+}
+.cep input {
   background-color: #e2e2e2;
   padding: 8px;
   border: 3px solid rgba(255, 255, 255, 0);
@@ -36,9 +47,11 @@ body {
   margin: 4% 0px;
   box-shadow: -2px -2px 4px rgba(255, 255, 255, 0.8666666667), 2px 2px 4px rgba(102, 102, 102, 0.4666666667), inset -2px -2px 4px rgba(255, 255, 255, 0.8666666667), inset 2px 2px 4px rgba(102, 102, 102, 0.4666666667);
 }
-
-.cep {
-  min-height: 250px;
+.cep__result {
+  padding: 12px;
+  height: 25vh;
+  width: 100%;
+  box-shadow: inset -2px -2px 4px rgba(255, 255, 255, 0.8666666667), inset 2px 2px 4px rgba(102, 102, 102, 0.4666666667);
 }
 
 .perfil {
@@ -56,22 +69,22 @@ body {
   position: absolute;
   border-radius: 50%;
   margin: auto;
-  width: 100%;
   height: 0%;
-  background: linear-gradient(45deg, rgb(215, 82, 255) 0%, rgb(0, 255, 102) 100%);
-  top: 50%;
+  background: linear-gradient(45deg, rgb(2, 0, 36) 0%, rgb(244, 205, 255) 0%, rgb(179, 255, 209) 100%);
   z-index: 1;
-  border-width: 50%;
 }
 .perfil__info {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 15px 8px;
   gap: 8px;
-  padding: 15px;
 }
 .perfil__info:ntt-child(1) {
   pointer-events: none;
+}
+.perfil__info img {
+  margin: auto;
 }
 .perfil__destack {
   overflow: hidden;
@@ -85,12 +98,13 @@ body {
   grid-row-end: 4;
   border: 3px solid rgba(255, 255, 255, 0);
   border-radius: 6px;
-  box-shadow: -4px -4px 8px rgba(255, 255, 255, 0.8666666667), 4px 4px 8px rgba(102, 102, 102, 0.4666666667);
+  box-shadow: -3px -3px 6px rgba(255, 255, 255, 0.8666666667), 3px 3px 6px rgba(102, 102, 102, 0.4666666667);
 }
 .perfil__destack img {
   max-width: 150px;
   max-height: 150px;
-  border-radius: 5px;
+  border-radius: 25px;
+  border: 2px solid rgba(45, 45, 45, 0.1254901961);
 }
 .perfil__card {
   overflow: hidden;
@@ -103,7 +117,7 @@ body {
   height: 60px;
   width: 60px;
   cursor: pointer;
-  background: linear-gradient(45deg, rgba(215, 82, 255, 0.2609418768) 0%, rgba(0, 255, 102, 0.193714986) 100%);
+  background: linear-gradient(45deg, rgb(2, 0, 36) 0%, rgb(244, 205, 255) 0%, rgb(179, 255, 209) 100%);
   padding: 5px;
   box-shadow: -3px -3px 5px rgba(255, 255, 255, 0.8666666667), 3px 3px 5px rgba(102, 102, 102, 0.4666666667);
 }
@@ -111,6 +125,7 @@ body {
   width: 50px;
   filter: grayscale(100%);
   border-radius: 50%;
+  transition: 0.4s;
 }
 .perfil__card:hover img {
   opacity: 1;
@@ -149,13 +164,21 @@ body {
 
 @keyframes switchEnd {
   0% {
+    width: 105%;
+    top: 50%;
     border-radius: 0;
   }
-  50% {
-    top: 0%;
-    height: 100%;
+  47% {
+    height: 105%;
+    top: -2.5%;
+  }
+  53% {
+    height: 105%;
+    top: -2.5%;
   }
   100% {
+    width: 105%;
+    top: 50%;
     border-radius: 0;
   }
 }
@@ -172,7 +195,7 @@ body {
   100% {
     top: 50%;
     width: 0%;
-    transform: rotate(360deg);
+    transform: rotate(405deg);
   }
 }
 @keyframes loading {

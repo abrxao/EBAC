@@ -1,6 +1,6 @@
 const url_cep = "https://viacep.com.br/ws/";
 const input = document.querySelector("#cep");
-const result = document.querySelector(".result");
+const result = document.querySelector(".cep__result");
 
 
 input.addEventListener("keyup", () =>{
@@ -29,6 +29,7 @@ fetch(url_reqes)
     perfis.innerHTML="";
     perfis.classList.add("perfil");
     data.data.map((perfil)=>{
+        
         if(perfil.id==1){
             perfis.innerHTML += '<div class="perfil__destack" id="'+perfil.id+'"><div class="perfil__disable"></div><div class="perfil__window"></div><div class= "perfil__info"><h3>'+perfil.first_name+" "+perfil.last_name+'</h3><img src="'+perfil.avatar+'"></img><p>E-mail: '+perfil.email+'</p></div></div>'; 
         }else{
@@ -38,6 +39,7 @@ fetch(url_reqes)
 })
 
 perfis.addEventListener('click', (e) =>{
+    
     if(e.target.classList.value=="perfil__disable"){
     }else{
         
@@ -47,23 +49,23 @@ perfis.addEventListener('click', (e) =>{
         var click = e.target;
         var first = click.querySelector('.perfil__info');
         var swt = "";
+        var swtDest = document.querySelector('.perfil__destack').querySelector('.perfil__window');
         
-        if(click.parentNode.parentNode.classList.value=='perfil__card'){
+        if(click.parentNode.parentNode.classList.value=='perfil__card'  ){
             swt = click.parentNode.parentNode.querySelector('.perfil__window'); 
         }else{
             swt = click.querySelector('.perfil__window'); 
         }
         
+        if(click.classList.value!='perfil' && click.classList.value!='perfil__destack'){
+            swtDest.setAttribute('style','animation: .8s switchEnd ease-in-out');
+            swt.setAttribute('style','animation: .8s switchRot ease-in-out');
+        }
         
-        var swtDest = document.querySelector('.perfil__destack').querySelector('.perfil__window');
-        swtDest.setAttribute('style','animation: .8s switchEnd ease-in-out');
-        swt.setAttribute('style','animation: .8s switchRot ease-in-out');
-        
-        if(e.target.classList.value=="perfil__card"){
+        if(click.classList.value=="perfil__card"){
             setTimeout(()=>{
                 infoDest[0].innerHTML=first.innerHTML;
                 first.innerHTML=aux;
-                
             },400)
             setTimeout(()=>{
                 swt.setAttribute('style','animation:none')
