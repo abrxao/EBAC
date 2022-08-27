@@ -13,7 +13,7 @@ input.addEventListener("keyup", () =>{
             }else{
                 result.innerHTML="";
                 Object.keys(data).forEach(key =>{
-                    result.innerHTML += key + " = " +data[key]+"<br>";
+                    result.innerHTML += "<p> "+key + " = " +data[key]+"</p><br>";
                 });
             }
         });
@@ -39,7 +39,6 @@ fetch(url_reqes)
 })
 
 perfis.addEventListener('click', (e) =>{
-    
     if(e.target.classList.value=="perfil__disable"){
     }else{
         
@@ -58,20 +57,20 @@ perfis.addEventListener('click', (e) =>{
         }
         
         if(click.classList.value!='perfil' && click.classList.value!='perfil__destack'){
-            swtDest.setAttribute('style','animation: .8s switchEnd ease-in-out');
-            swt.setAttribute('style','animation: .8s switchRot ease-in-out');
+            swtDest.setAttribute('style','animation: .7s switchEnd ease-in-out');
+            swt.setAttribute('style','animation: .7s switchRot ease-in-out');
         }
         
         if(click.classList.value=="perfil__card"){
             setTimeout(()=>{
                 infoDest[0].innerHTML=first.innerHTML;
                 first.innerHTML=aux;
-            },400)
+            },350)
             setTimeout(()=>{
                 swt.setAttribute('style','animation:none')
                 swtDest.setAttribute('style',"animation:none");
                 
-            },820)   
+            },720)   
             
             return true;     
             
@@ -80,14 +79,13 @@ perfis.addEventListener('click', (e) =>{
             setTimeout(()=>{
                 infoDest[0].innerHTML=click.parentNode.innerHTML;
                 click.parentNode.innerHTML=aux;
-            },400)
+            },350)
             setTimeout(()=>{
                 swt.setAttribute('style','animation:none')
                 swtDest.setAttribute('style',"animation:none");
                 
-            },820) 
+            },720) 
             return true;
         }
     }
-    
 });
