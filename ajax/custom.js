@@ -29,7 +29,6 @@ fetch(url_reqes)
     perfis.innerHTML="";
     perfis.classList.add("perfil");
     data.data.map((perfil)=>{
-        
         if(perfil.id==1){
             perfis.innerHTML += `<div class="perfil__destack"id="${perfil.id}">
             <div class="perfil__disable">
@@ -40,7 +39,8 @@ fetch(url_reqes)
             <p>E-mail: '${perfil.email}'</p>
             </div>
             </div>`; 
-        }else{
+        }
+        else{
             perfis.innerHTML += `<div class="perfil__card" id="${perfil.id}">
             <div class="perfil__window"></div>
             <div class= "perfil__info">
@@ -50,13 +50,12 @@ fetch(url_reqes)
             </div>
             </div>`; 
         }
-        
     });
     
     var cardAux = '';
     cards =document.querySelectorAll('.perfil__card');
     cards.forEach(card=>{
-        card.addEventListener('click', e =>{
+        card.addEventListener('click', () =>{
             cards.forEach(c=>{c.classList.add('noClick')})
 
             var destack = document.querySelector('.perfil__destack');
@@ -64,20 +63,28 @@ fetch(url_reqes)
             var wdwDestack = destack.querySelector('.perfil__window');
             cardAux = destack.querySelector('.perfil__info').innerHTML;
             
-            wdwDestack.setAttribute('style','animation: .8s switchEnd ease-in-out');
-            wdwCard.setAttribute('style','animation: .8s switchRot ease-in-out');            
+            wdwDestack.setAttribute('style','animation: .7s switchEnd ease-in-out');
+            wdwCard.setAttribute('style','animation: .7s switchRot ease-in-out');            
             
             setTimeout(()=>{
                 dbcAux= card.querySelector('.perfil__info').innerHTML;
                 destack.querySelector('.perfil__info').innerHTML=card.querySelector('.perfil__info').innerHTML;
                 card.querySelector('.perfil__info').innerHTML=cardAux;
-            },400)
+            },350)
             setTimeout(()=>{
                 wdwCard.setAttribute('style','animation:none')
                 wdwDestack.setAttribute('style',"animation:none");
-                cards.forEach(c=>{c.classList.remove('noClick')})
-            },800)
+                cards.forEach(c=>{c.classList.remove('noClick')});
+                
+            },700)
             
         });
     })
+})
+
+const swt = document.getElementById('swt');
+const html = document.querySelector('html');
+
+swt.addEventListener('change',()=>{
+    html.classList.toggle('dark-mode');
 })
