@@ -67,6 +67,10 @@ body {
   font-size: 1.3rem;
 }
 
+.noClick {
+  pointer-events: none;
+}
+
 .perfil {
   display: grid;
   grid-template-columns: repeat(5, 1fr);

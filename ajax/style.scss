@@ -75,7 +75,9 @@ body{
         }
     }
 }
-
+.noClick{
+    pointer-events: none;
+}
 .perfil {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -142,6 +144,7 @@ body{
         }
     }
     &__card{
+        
         grid-column-start: 1;
         overflow: hidden;
         position: relative;
