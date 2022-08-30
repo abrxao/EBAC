@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="./css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <title>Ajax Form</title>
+</head>
+<body>
+    <div class="main">
+        <div class="swt-btn">
+            <p>Switch Theme</p>
+            <input type="checkbox" id="swt">
+        </div>
+        <section id="section-cep">
+            <div class="alerta" id="alert">
+                <p>VERIFIQUE OS CAMPOS EM OBRIGATORIOS</p>
+            </div>
+                <h1>FAÇA SEU CADASTRO</h1>
+                <form id="forms" autocomplete="off">                
+                    <div class="form-grp">
+                        <label for="nome">Nome</label><br>
+                        <input  id="nome" name="nome" placeholder="Digite seu nome" type="text" minlength="5">
+                        <span class="verify"></span>
+                    </div>
+
+                    <div class="form-grp">
+                        <label for="email">E-mail</label><br>
+                        <input  id="email" name="nome" placeholder="Digite seu e-mail" type="email">
+                        <span class="verify"></span>
+                    </div>
+
+                    <div class="form-grp">
+                        <label for="cep">CEP</label><br>
+                        <input  id="cep" placeholder="Digite seu CEP" type="text" maxlength="9">
+                        <span class=""></span>
+                    </div>  
+                    
+                    <div class="form-grp">
+                        <label for="city">Cidade</label><br>
+                        <input  id="city" placeholder="Digite sua cidade" type="text" minlength="5">
+                        <span class="verify"></span>
+                    </div> 
+
+                    <div class="form-grp">
+                        <label for="bairro">Bairro</label><br>
+                        <input  id="bairro" placeholder="Digite seu bairro" type="text" minlength="5">
+                        <span class="verify"></span>
+                    </div>
+
+                    <div class="form-grp">
+                        <label for="rua">Rua</label><br>
+                        <input  id="rua" placeholder="Digite sua rua" type="text" minlength="5">
+                        <span class="verify"></span>
+                    </div> 
+                    <button type="submit" class="submit"></button>             
+                </form>
+        </section>
+        
+    </div>
+</body>
+<script src='./js/valida.js'></script>
+</html>

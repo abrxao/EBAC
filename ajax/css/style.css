@@ -1,0 +1,459 @@
+@font-face {
+  font-family: "architextregular";
+  src: url("./fonts/architxt-webfont.woff2") format("woff2"), url("./fonts/architxt-webfont.woff") format("woff"), url("./fonts/architxt-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "louis_george_cafebold";
+  src: url("./fonts/louis_george_cafe_bold-webfont.woff2") format("woff2"), url("./fonts/louis_george_cafe_bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "louis_george_cafeitalic";
+  src: url("./fonts/louis_george_cafe_italic-webfont.woff2") format("woff2"), url("./fonts/louis_george_cafe_italic-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "louis_george_caferegular";
+  src: url("./fonts/louis_george_cafe-webfont.woff2") format("woff2"), url("./fonts/louis_george_cafe-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+:root {
+  --color:#e8e8e8;
+  --bg-color:#2d2d2d;
+  --bg-color-hover:#323232;
+  --neoSdw1:#aaaaaa2f;
+  --neoSdw2:#00000099;
+  --placeholder: #444;
+  --invSdw1:#FF8870;
+  --invSdw2:#322020;
+  --valid-color: #40e0d0;
+}
+
+.light-mode:root {
+  --valid-color: #008f77;
+  --placeholder: #cecece;
+  --bg-color:#e8e8e8;
+  --bg-color-hover:#e4e4e4;
+  --neoSdw1:#ffffffdd;
+  --neoSdw2:#66666677;
+  --color:#3a3a3a;
+  --invSdw1:#f77;
+  --invSdw2:#a87575;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+
+body * {
+  font-family: architextregular;
+  font-weight: bold;
+  text-shadow: 0px 0px 1px var(--color);
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+  color: var(--color);
+  letter-spacing: 1px;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  background-color: var(--bg-color);
+}
+
+.swt-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 8px;
+  top: 5%;
+  border-radius: 20px;
+}
+.swt-btn p {
+  font-size: 2.2rem;
+}
+.swt-btn input {
+  width: 100%;
+  height: 40px;
+  -webkit-appearance: none;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  cursor: pointer;
+  outline: none;
+  border-radius: 50px;
+  cursor: pointer;
+  background-color: var(--bg-color);
+  box-shadow: -2px -3px 5px var(--neoSdw1), 3px 3px 5px var(--neoSdw2);
+  font-size: 1.4rem;
+}
+.swt-btn input::before {
+  content: "TO DARK";
+}
+.swt-btn input:after {
+  font-family: "FontAwesome", Arial, Helvetica, sans-serif;
+  content: "\f185";
+  margin-left: 5px;
+  text-shadow: none;
+}
+.swt-btn input:checked::before {
+  content: " TO LIGHT";
+}
+.swt-btn input:checked::after {
+  content: " \f186";
+  text-shadow: none;
+}
+.swt-btn input:checked {
+  border: 4px solid rgba(255, 255, 255, 0);
+  box-shadow: -2px -3px 5px var(--neoSdw1), 3px 3px 5px var(--neoSdw2), inset -2px -3px 5px var(--neoSdw1), inset 3px 3px 5px var(--neoSdw2);
+}
+
+.main {
+  width: 100vw;
+  min-height: 100vh;
+  padding: 30px 0;
+  gap: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+
+@keyframes switchEnd {
+  12% {
+    left: 0;
+    width: 100%;
+    border-radius: 0;
+  }
+  26% {
+    left: 0;
+    width: 100%;
+    border-radius: 0;
+    height: 15px;
+  }
+  50% {
+    left: 0;
+    width: 100%;
+    height: 102%;
+    top: -2%;
+  }
+  75% {
+    left: 0;
+    height: 12px;
+    width: 100%;
+    top: 5%;
+  }
+  87% {
+    left: 41%;
+    width: 18%;
+    height: 20px;
+    top: calc(5% - 5px);
+  }
+}
+@keyframes switchRot {
+  0% {
+    border-radius: 50%;
+    opacity: 1;
+    top: 50%;
+  }
+  50% {
+    border-radius: 50%;
+    opacity: 1;
+    top: 0%;
+    width: 100%;
+    height: 100%;
+    transform: rotate(90deg);
+  }
+  100% {
+    border-radius: 50%;
+    opacity: 1;
+    top: 50%;
+  }
+}
+@keyframes loading {
+  100% {
+    left: 100%;
+  }
+}
+@keyframes alert {
+  10% {
+    top: -30px;
+  }
+  90% {
+    top: -30px;
+  }
+  100% {
+    top: -230px;
+  }
+}
+#section-cep {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 92%;
+  max-width: 600px;
+  border-radius: 45px;
+  box-shadow: -2px -4px 7px var(--neoSdw1), 3px 3px 7px var(--neoSdw2);
+  border: 4px solid var(--bg-color);
+}
+#section-cep h1 {
+  margin: 15px 0;
+}
+#section-cep .alerta {
+  position: absolute;
+  padding: 40px;
+  padding-top: 160px;
+  border-radius: 30px;
+  box-shadow: -3px -3px 5px var(--neoSdw1), 3px 3px 5px var(--neoSdw2);
+  top: -230px;
+  background-color: var(--bg-color);
+}
+#section-cep .alerta p {
+  color: var(--invSdw1);
+}
+#section-cep .alerta:target {
+  animation: alert 3s linear;
+}
+#section-cep #forms {
+  width: 92%;
+  padding: 10px 0;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding-bottom: 90px;
+}
+#section-cep #forms .form-grp {
+  position: relative;
+}
+#section-cep #forms .form-grp .verify {
+  position: absolute;
+  padding: 8px;
+  border-radius: 20px;
+  top: 42px;
+  right: 3%;
+  box-shadow: -2px -2px 5px var(--neoSdw1), 2px 2px 5px var(--neoSdw2);
+}
+#section-cep #forms .form-grp .verify:after {
+  font-size: 1.5rem;
+  font-family: "FontAwesome";
+  content: "*";
+  color: var(--color);
+}
+#section-cep #forms .form-grp .invalid:after {
+  color: var(--invSdw1);
+  font-size: 1.8rem;
+  font-family: "FontAwesome";
+  content: "\f00d";
+}
+#section-cep #forms .form-grp .valid:after {
+  text-shadow: 1px 1px 2px var(--valid-color);
+  font-size: 1.5rem;
+  font-family: "FontAwesome";
+  content: "\f00c";
+  color: var(--valid-color);
+}
+#section-cep #forms label {
+  font-size: 1.5rem;
+  margin-left: 15px;
+}
+#section-cep #forms button {
+  position: absolute;
+  bottom: 15px;
+  right: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-bottom: 5px;
+  height: 65px;
+  width: 50%;
+  border: 8px solid rgba(255, 255, 255, 0);
+  font-size: 1.8rem;
+  cursor: pointer;
+  border-radius: 20px;
+  background-color: var(--bg-color);
+  box-shadow: -3px -3px 5px var(--neoSdw1), 3px 3px 5px var(--neoSdw2);
+  min-width: 230px;
+}
+#section-cep #forms button:after {
+  content: "ENVIAR";
+}
+#section-cep #forms button:hover {
+  font-size: 1.82rem;
+  background-color: var(--bg-color-hover);
+  box-shadow: -4px -4px 8px var(--neoSdw1), 4px 4px 8px var(--neoSdw2);
+}
+#section-cep #forms button:active {
+  box-shadow: -3px -3px 5px var(--neoSdw1), 3px 3px 5px var(--neoSdw2), inset -5px -5px 8px var(--neoSdw1), inset 5px 5px 8px var(--neoSdw2);
+}
+#section-cep #forms button:active:after {
+  font-size: 1.7rem;
+}
+#section-cep #forms input {
+  font-size: 1.6rem;
+  background-color: rgba(255, 255, 255, 0);
+  font-family: louis_george_caferegular;
+  padding: 18px;
+  letter-spacing: 1px;
+  border: 0;
+  text-shadow: 1px 1px 1px var(--neoSdw2);
+  font-weight: bold;
+  border-radius: 30px;
+  margin: 3% 0px;
+  width: 100%;
+  box-shadow: inset -2px -2px 5px var(--neoSdw1), inset 2px 2px 5px var(--neoSdw2);
+}
+#section-cep #forms input::placeholder {
+  color: var(--placeholder);
+  letter-spacing: 1px;
+}
+
+.noClick {
+  pointer-events: none;
+  cursor: pointer;
+}
+
+.perfil {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 60px);
+  gap: 20px;
+  margin-bottom: 15%;
+}
+.perfil__disable {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.perfil__window {
+  width: 0%;
+  height: 0%;
+  position: absolute;
+  background: linear-gradient(45deg, rgb(2, 0, 36) 0%, rgb(244, 205, 255) 0%, rgb(179, 255, 209) 100%);
+  z-index: 1;
+}
+.perfil__window:nth-child(2) {
+  background: linear-gradient(45deg, rgb(2, 0, 36) 0%, rgb(244, 205, 255) 0%, rgb(179, 255, 209) 100%);
+  left: 35%;
+  top: 5%;
+  border-radius: 10px;
+  width: 30%;
+  height: 10px;
+}
+.perfil__info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2vh 2.1%;
+  gap: 15px;
+  width: 350px;
+  margin-top: 5%;
+  place-self: center;
+}
+.perfil__info h3 {
+  letter-spacing: 2px;
+  text-shadow: none;
+  font-size: 2rem;
+}
+.perfil__info p {
+  font-family: louis_george_caferegular;
+  letter-spacing: 1px;
+  text-shadow: none;
+  font-size: 1.5rem;
+  padding-bottom: 10px;
+}
+.perfil__destack {
+  overflow: hidden;
+  position: relative;
+  margin: auto;
+  margin-left: -2%;
+  height: 380px;
+  grid-column-start: 2;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 4;
+  display: flex;
+  border: 3px solid rgba(255, 255, 255, 0);
+  border-radius: 30px;
+  box-shadow: -3px -3px 6px var(--neoSdw1), 3px 3px 6px var(--neoSdw2);
+  font-size: 1.5rem;
+}
+.perfil__destack img {
+  width: 200px;
+  height: 200px;
+  margin: 20px 0;
+  border-radius: 25px;
+  border: 2px solid var(--color);
+}
+.perfil__card {
+  grid-column-start: 1;
+  overflow: hidden;
+  position: relative;
+  border-radius: 50%;
+  border: 3px solid var(--bg-color);
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  width: 60px;
+  cursor: pointer;
+  background: linear-gradient(45deg, rgb(2, 0, 36) 0%, rgb(244, 205, 255) 0%, rgb(179, 255, 209) 100%);
+  padding: 5px;
+  box-shadow: -3px -3px 5px var(--neoSdw1), 3px 3px 5px var(--neoSdw2);
+}
+.perfil__card img {
+  width: 50px;
+  filter: grayscale(100%);
+  border-radius: 50%;
+  transition: 0.4s;
+}
+.perfil__card:hover img {
+  opacity: 1;
+  filter: grayscale(0%);
+}
+.perfil__card h3, .perfil__card p {
+  display: none;
+}
+
+.load {
+  width: 150px;
+  height: 30px;
+  box-shadow: -2px -2px 4px var(--neoSdw1), 2px 2px 4px var(--neoSdw2);
+  position: relative;
+  overflow: hidden;
+  border: 3px solid var(--bg-color);
+  border-radius: 5px;
+}
+.load h4 {
+  text-align: center;
+}
+.load__blank {
+  width: 25%;
+  height: 100%;
+  opacity: 0.7;
+  background-color: #ffffff;
+  position: absolute;
+  left: -25%;
+  border: 4px solid #ffffff;
+  border-radius: 4px;
+  animation: loading 1.2s ease-in infinite;
+}
+.load__blank:nth-child(2) {
+  animation-delay: 0.6s;
+}
+
+/*# sourceMappingURL=style.css.map */
