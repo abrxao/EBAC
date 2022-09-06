@@ -56,7 +56,6 @@ header {
 .col-md-10{
     margin: auto;
     border: 1px solid var(--border-gray);
-    height: 100vh;
 }
 
 .banner{
@@ -167,7 +166,11 @@ header {
         }
     }
 }
-
+footer{
+    .container{
+        display: flex;
+    }
+}
 @keyframes slide{
     100%{
         margin-left: calc(-100% + 28px);

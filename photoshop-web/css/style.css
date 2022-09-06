@@ -54,7 +54,6 @@ header .menu ul li a.menu__active {
 .col-md-10 {
   margin: auto;
   border: 1px solid var(--border-gray);
-  height: 100vh;
 }
 
 .banner {
@@ -154,6 +153,10 @@ header .menu ul li a.menu__active {
 }
 .content .col a:hover span {
   background-color: var(--color-red);
+}
+
+footer .container {
+  display: flex;
 }
 
 @keyframes slide {
