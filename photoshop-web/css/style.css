@@ -13,9 +13,9 @@
 }
 
 body {
-  max-width: 1200px;
-  min-width: 1200px;
   margin: auto;
+  background-image: linear-gradient(#ccc 38%, #fff, #fff);
+  background-repeat: no-repeat;
 }
 
 header {
@@ -24,6 +24,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+  background-color: #fff;
 }
 header .menu ul {
   display: flex;
@@ -51,13 +52,20 @@ header .menu ul li a.menu__active {
   padding-bottom: 5px;
 }
 
+.bg-1 {
+  background-image: linear-gradient(180deg, #666, #222);
+  background-size: 100% 445px;
+  background-repeat: no-repeat;
+}
+
 .col-md-10 {
   margin: auto;
-  border: 1px solid var(--border-gray);
+  width: 990px;
 }
 
 .banner {
   display: flex;
+  background-color: #fff;
 }
 .banner__slide {
   background-color: var(--color-red);
@@ -73,7 +81,7 @@ header .menu ul li a.menu__active {
   left: -10px;
   width: 20px;
   height: 20px;
-  background-color: var(--color-red);
+  background: var(--color-red);
 }
 .banner__slide__info {
   display: flex;
@@ -86,7 +94,6 @@ header .menu ul li a.menu__active {
 .banner__slide__info__slide {
   min-width: 290px;
   margin-right: 62px;
-  z-index: 1;
 }
 .banner__slide__info__slide h1 {
   font-weight: 400;
@@ -131,8 +138,10 @@ header .menu ul li a.menu__active {
 }
 
 .content {
+  background-color: #fff;
   display: flex;
   padding: 30px 20px;
+  padding-bottom: 65px;
 }
 .content .col h2 {
   font-size: 19pt;
@@ -155,8 +164,46 @@ header .menu ul li a.menu__active {
   background-color: var(--color-red);
 }
 
+footer {
+  background-color: #dfdfdf;
+  width: 100%;
+}
 footer .container {
   display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 30px;
+}
+footer .container .imgBox {
+  padding: 25px 30px;
+  padding-left: 20px;
+  position: relative;
+  overflow: hidden;
+}
+footer .container .imgBox .dec {
+  width: 60px;
+  height: 150px;
+  background: radial-gradient(rgba(119, 119, 119, 0.4), rgba(223, 223, 223, 0), rgba(223, 223, 223, 0));
+  left: -33px;
+  top: -25px;
+  position: absolute;
+}
+footer .container .info {
+  display: flex;
+  gap: 28px;
+}
+footer .container .help {
+  text-align: right;
+}
+footer .container .help a {
+  font-weight: 500;
+  color: var(--color-red);
+}
+footer .container p {
+  font-size: 11pt;
+}
+footer .container img {
+  object-fit: contain;
 }
 
 @keyframes slide {

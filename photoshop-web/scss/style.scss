@@ -12,9 +12,9 @@
     outline: none;
 }
 body{
-    max-width: 1200px;
-    min-width: 1200px;
     margin: auto;
+    background-image: linear-gradient(#ccc 38%,#fff, #fff);
+    background-repeat: no-repeat;
 }
 header {
     padding: 22px 28px 32px;
@@ -22,6 +22,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
+    background-color: #fff;
     .menu{
         
         ul{
@@ -53,13 +54,22 @@ header {
         
     }
 }
+
+.bg-1{
+    background-image: linear-gradient(180deg,#666,#222);
+    background-size: 100% 445px;
+    background-repeat: no-repeat;
+
+}
+
 .col-md-10{
     margin: auto;
-    border: 1px solid var(--border-gray);
+    width: 990px;
 }
 
 .banner{
     display: flex;
+    background-color: #fff;
     &__img{
     }
     &__slide{
@@ -75,7 +85,7 @@ header {
             left: -10px;
             width: 20px;
             height: 20px;
-            background-color: var(--color-red);
+            background: var(--color-red);
         }
         &__info{
             display: flex;
@@ -88,7 +98,6 @@ header {
             &__slide{
                 min-width: 290px;
                 margin-right: 62px;
-                z-index: 1;
                 h1{
                     font-weight: 400;
                     font-size: 24pt;
@@ -141,8 +150,10 @@ header {
 }
 
 .content{
+    background-color: #fff;
     display: flex;
     padding: 30px 20px;
+    padding-bottom: 65px;
     .col{
         h2{
             font-size: 19pt;
@@ -166,11 +177,49 @@ header {
         }
     }
 }
+
 footer{
+    background-color: #dfdfdf;
+    width: 100%;
     .container{
         display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px 30px;
+        .imgBox{
+            padding: 25px 30px;
+            padding-left: 20px;
+            position: relative;
+            overflow: hidden;
+            .dec{
+                width: 60px;
+                height: 150px;
+                background: radial-gradient(#7776,#dfdfdf00,#dfdfdf00);
+                left: -33px;
+                top:-25px;
+                position: absolute;
+            }
+        }
+        .info{
+            display: flex;
+            gap: 28px;
+        }
+        .help{
+            text-align: right;
+            a{
+                font-weight: 500;
+                color: var(--color-red);
+            }
+        }
+        p{
+            font-size: 11pt;
+        }
+        img{
+            object-fit: contain;
+        }
     }
 }
+
 @keyframes slide{
     100%{
         margin-left: calc(-100% + 28px);
