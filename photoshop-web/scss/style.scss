@@ -70,21 +70,23 @@ header {
 .banner{
     display: flex;
     background-color: #fff;
+    overflow: hidden;
     &__img{
+        z-index: 0;
     }
     &__slide{
         background-color: var(--color-red);
-        overflow: hidden;
         width: calc(100% - 592px);
-        height: 312px;
         position: relative;
-        &__sqr-dec{
+        z-index: 1;
+        height: 312px;
+        &__sqr{
             position: absolute;
-            top:12%;
             rotate: 45deg;
+            top: 12.5%;
             left: -10px;
-            width: 20px;
-            height: 20px;
+            width: 28px;
+            height: 28px;
             background: var(--color-red);
         }
         &__info{
@@ -115,6 +117,7 @@ header {
         &__controlButtons{
             margin-left: 30px;
             margin-top: 10px;
+
             button{
                 cursor: pointer;
                 padding: 2px 8px;

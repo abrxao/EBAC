@@ -66,21 +66,25 @@ header .menu ul li a.menu__active {
 .banner {
   display: flex;
   background-color: #fff;
+  overflow: hidden;
+}
+.banner__img {
+  z-index: 0;
 }
 .banner__slide {
   background-color: var(--color-red);
-  overflow: hidden;
   width: calc(100% - 592px);
-  height: 312px;
   position: relative;
+  z-index: 1;
+  height: 312px;
 }
-.banner__slide__sqr-dec {
+.banner__slide__sqr {
   position: absolute;
-  top: 12%;
   rotate: 45deg;
+  top: 12.5%;
   left: -10px;
-  width: 20px;
-  height: 20px;
+  width: 28px;
+  height: 28px;
   background: var(--color-red);
 }
 .banner__slide__info {
