@@ -3,15 +3,18 @@
     .ballDec{
         position: absolute;
         left: -202px;
+        top: -75px;
         width: 673px;
         aspect-ratio: 1;
         border-radius: 50%;
         background-color: var(--color-blue);
         opacity: .2;
+        z-index: -1;
     }
     .loc{
         display: flex;
         flex-direction: column;
+        align-items: center;
         gap: 42px;
         &__title{
             text-align: center;
@@ -25,7 +28,15 @@
             text-align: center;            
         }
         &_maps{
-            
+            margin-top: 30px;
+            box-shadow: 0px 0px 10px 3px var(--color-gray);
+        }
+
+        &__linedec{
+            width: 315px;
+            height: 3px;
+            margin: 40px;
+            background-color: #000;
         }
     }
 

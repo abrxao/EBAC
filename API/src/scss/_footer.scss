@@ -1,0 +1,11 @@
+footer .container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #1a1a1a;
+    height: 150px;
+    .footerDesc{
+        color: #fff;
+        font-size: 14px;
+    }
+}
