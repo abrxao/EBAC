@@ -15,16 +15,19 @@
         margin: 15px 0;
     }
     .alerta{
-        position: absolute;
-        padding: 40px;
+        position: fixed;
+        padding: 20px;
+        z-index: 1;
         padding-top: 160px;
-        border-radius: 30px;     
+        border-radius: 20px;
         box-shadow: 
         -3px -3px 5px var(--neoSdw1),
         3px 3px 5px var(--neoSdw2);
         top:-230px;
         background-color: var(--bg-color);
-        p{
+        p{  
+            font-size: 1.7rem;
+            font-family: louis_george_cafebold;  
             color: var(--invSdw1);
         }
         &:target{

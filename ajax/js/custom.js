@@ -1,6 +1,20 @@
+const prefersColorScheme = window.matchMedia('(prefers-color-scheme: dark)');
 
+setTimeout(()=>{
+    changeTheme(prefersColorScheme);
+},0);
 
-const url_reqes="https://reqres.in/api/users?delay=3";
+function changeTheme(e) {
+  if( e.matches ) {
+    html.classList.remove('light-mode');
+  }
+  else{
+    html.classList.add('light-mode');
+  }
+}
+prefersColorScheme.addListener(changeTheme);
+
+const url_reqes="https://reqres.in/api/users?delay=1.5";
 const perfis= document.querySelector('#perfil');
 var cards='';
 
@@ -35,7 +49,7 @@ fetch(url_reqes)
     });
     
     var cardAux = '';
-    cards =document.querySelectorAll('.perfil__card');
+    cards = document.querySelectorAll('.perfil__card');
     cards.forEach(card=>{
         card.addEventListener('click', () =>{
             cards.forEach(c=>{

@@ -40,7 +40,7 @@ npm install -g sass
 4. criar ou alterar arquivo style.scss
 5. rodar o comando para processar o css:
 ```
-sass ./scss/style.scss ./css/style.css 
+sass ./scss/style.scss ./css/style.css
 ```
 
 6. customizar o projeto 

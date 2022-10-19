@@ -1,6 +1,7 @@
 @import 'fonts';
 :root{
     --color:#e8e8e8;
+    --color-gray:#888;
     --bg-color:#2d2d2d;
     --bg-color-hover:#323232;
     --neoSdw1:#aaaaaa2f;
@@ -9,6 +10,7 @@
     --invSdw1:#FF8870;
     --invSdw2:#322020;
     --valid-color: #40e0d0;
+    --swt-text: 'to light';
 }
 .light-mode:root{
     --valid-color: #008f77;
@@ -20,6 +22,7 @@
     --color:#3a3a3a;
     --invSdw1:#f77;
     --invSdw2:#a87575;
+    --swt-text: 'to dark';
 }
 
 html{
@@ -77,17 +80,17 @@ body{
         3px 3px 5px var(--neoSdw2);
         font-size: 1.4rem;
         &::before{
-            content: "TO DARK";
+            content: var(--swt-text);
         }
         &:after{
             font-family: 'FontAwesome',Arial, Helvetica, sans-serif;
             content: '\f185';
-
+            
             margin-left: 5px;
             text-shadow: none;
         }
         &:checked::before{
-            content: ' TO LIGHT'; 
+            content: var(--swt-text);
         }
         &:checked::after{
             content: ' \f186';
@@ -101,7 +104,6 @@ body{
             inset -2px -3px 5px var(--neoSdw1),
             inset 3px 3px 5px var(--neoSdw2);
         }
-        
     }
 }
 
@@ -118,7 +120,6 @@ body{
 
 @import 'animations';
 @import 'forms';
-
 
 .noClick{
     pointer-events: none;
@@ -197,11 +198,9 @@ body{
             margin: 20px 0;
             border-radius: 25px;
             border: 2px solid var(--color);
-            
         }
     }
     &__card{
-        
         grid-column-start: 1;
         overflow: hidden;
         position: relative;
@@ -235,6 +234,29 @@ body{
     }
 }
 .load{
+    position: relative;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 12px solid #fff0;
+    box-shadow: 
+    -3px -3px 5px var(--neoSdw1),
+    3px 3px 5px var(--neoSdw2),
+    inset -5px -5px 8px var(--neoSdw1),
+    inset 5px 5px 8px var(--neoSdw2);
+    
+    &__blank{
+        top: -12px;
+        left: -12px;
+        position: absolute;
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        border: 12px solid #fff0;
+        border-bottom-color: var(--color-gray);
+        animation: loading 1s infinite;
+    }
+    /*
     width: 150px;
     height: 30px;
     box-shadow: 
@@ -260,7 +282,7 @@ body{
         &:nth-child(2) {
             animation-delay: .6s;
         }
-    }
+    }*/
 }
 
 

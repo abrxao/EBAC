@@ -54,16 +54,17 @@
     }
 }
 @keyframes loading {
+    
     100% {
-        left: 100%;
+        transform: rotate(360deg);
     }
 }
 @keyframes alert {
     10%{
-        top: -30px;
+        top: -130px;
     }
     90%{
-        top: -30px;
+        top: -130px;
     }
     100%{
         top:-230px;

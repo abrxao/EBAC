@@ -38,25 +38,21 @@ function validaEmail(email){
 function validaCampos(form){
     inputs.forEach((camp)=>{
         if(camp.parentNode.querySelector('span').classList!=""){
-            if(camp.value.length>3 && camp.value != ""){
+            if(camp.value.length>3){
                 camp.parentNode.querySelector('span').classList.remove('invalid');
                 camp.parentNode.querySelector('span').classList.add('valid');            
-            }
-            else if (camp.getAttribute('type')!= "email" && camp.parentNode.querySelector('span').classList.value != "verify valid"){
-                camp.parentNode.querySelector('span').classList.add('invalid');
-                camp.parentNode.querySelector('span').classList.remove('valid');
-                window.location.href = "#alert";
-                formValid = false;
-            }
-            else if (camp.getAttribute('id')!= "cep" || camp.parentNode.querySelector('span').classList.value == "verify invalid" && validaCep(camp.value)==false){            
-                camp.parentNode.querySelector('span').classList.value = "verify invalid";
-                window.location.href = "#alert";
-                formValid = false;
             }
             else{
                 window.location.href = "#alert";
                 camp.parentNode.querySelector('span').classList.add('invalid');
                 camp.parentNode.querySelector('span').classList.remove('valid');
+                formValid = false;
+            }
+        }
+        else{
+            if(validaCep(camp.value)==false){
+                camp.parentNode.querySelector('span').classList.value = "verify invalid";
+                window.location.href = "#alert";
                 formValid = false;
             }
         }
@@ -104,7 +100,6 @@ cep.addEventListener("keypress" ,(e) =>{
                     bairro.parentNode.querySelector('span').classList.value = ('verify');
                 }
                 else{
-                    console.log(data.logradouro);
                     rua.value = data.logradouro;  
                     rua.parentNode.querySelector('span').classList.value = ('verify valid');                                              
                     city.value = data.localidade;
@@ -116,9 +111,6 @@ cep.addEventListener("keypress" ,(e) =>{
             });
         }        
     },0)
-    
-    
-    
 });
 
 var alerta = document.querySelector('#alert');
@@ -126,13 +118,12 @@ window.location.href = "#";
 
 form.addEventListener("submit",e=>{ 
     formValid = true;
-    var a = validaCampos(form);
-    console.log(formValid);
+    validaCampos(form);
+    e.preventDefault();
+    
     if (formValid==true){
         form.submit();
     }
-    
-    e.preventDefault();
     setTimeout(()=>{
         window.location.href = "#";
     },3000)
