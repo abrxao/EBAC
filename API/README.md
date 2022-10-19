@@ -1,5 +1,5 @@
 # Browser API
-Projeto para testar conhecimentos com API nativas dos navegadores, como Drag&Drop, Canvas,Geolocation e Screen Size Events.
+Projeto para testar conhecimentos com API nativas dos navegadores, como Drag&Drop, Canvas,Geolocation e Screen Size Events. O site foi copiado de um projeto figma.[Link Figma](https://www.figma.com/file/XswYuQJz5RRCyUUfQwFbnh/Website-Landing-Page?node-id=15%3A355)
 
 ## Atividade
 - Copiar site disponibilazado no modulo.
