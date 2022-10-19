@@ -1,10 +1,8 @@
-# Lance Negócios
-Projeto para base de conhecimento de CSS Avançado.
+# Browser API
+Projeto para testar conhecimentos com API nativas dos navegadores, como Drag&Drop, Canvas,Geolocation e Screen Size Events.
 
 ## Atividade
-- Implementar mais seções que achar necessário.
-- Adaptar conteúdo para alguma ideia sua.
-- Use a criativadade para criar algo diferente a partir dos conceitos e códigos aprendidos.
+- Copiar site disponibilazado no modulo.
 
 ## Projeto Base (framework simulator)
 - Baixar, instalar e rodar
