@@ -1,103 +1,34 @@
+:root{
+    --color:#e8e8e8;
+    --color-gray:#888;
+    --bg-color:#2d2d2d;
+    --bg-color-hover:#323232;
+    --neoSdw1:#aaaaaa2f;
+    --neoSdw2:#00000099;
+    --placeholder: #444;
+    --invSdw1:#FF8870;
+    --invSdw2:#322020;
+    --valid-color: #40e0d0;
+    --swt-text: 'to light';
+}
+.light-mode:root{
+    --valid-color: #008f77;
+    --placeholder: #cecece;
+    --bg-color:#e8e8e8;
+    --bg-color-hover:#e4e4e4;
+    --neoSdw1:#ffffffdd;
+    --neoSdw2:#66666677; 
+    --color:#3a3a3a;
+    --invSdw1:#f77;
+    --invSdw2:#a87575;
+    --swt-text: 'to dark';
+}
 
-
-$bold: 2px;
-$font-color-primary: #f2f2f2;
-$color-primary: #304D63;
-$font-color-secondary: #2f2f2f;
-$font-default: logoplexi, Helvetica,serif;
-$font-size-default: 1.6rem;
-$font-size-nav: 1.8rem;
-$color-secondary: #ed8975;
-$light-blue: #b2e7e8;
-$turquoise: #8fb944;
-$semi-bold: 1px;
-$yellow: #f2d096;
-@import 'fonts';
-@import url('https://fonts.googleapis.com/css2?family=Fruktur&display=swap');
 @import 'nav';
 
-html {
-    font-size: 62.5%;
-    scroll-behavior: smooth;
-}
-
-* {
-    box-sizing: border-box;
-}
-
-body {
-    background-color: $color-primary;
-    font-family: $font-default;
-    margin: 0;
-    letter-spacing: 2px;
-}
-
-h1 {
-    color: $font-color-primary;
-    text-align: center;
-    margin-top: 4rem;
-    letter-spacing: 4px;
-    
-}
-
-article {
-
-    h1 {
-        color: $color-secondary;
-        font-size: 3rem;
-        text-align: left;
-        letter-spacing: 4px;
-        @media(max-width:350px){
-            font-size: 2.4rem;
-        }
-    }
-
-}
-
-h2 {
-    color: $font-color-primary;
-    font-weight: 700;
-    font-size: 2rem;
-    margin-top: 4rem;
-    text-shadow: 1px 2px 8px #FFFFFF;
-    letter-spacing: 4px;
-    @media(max-width:350px){
-        font-size: 1.8rem;
-    }
-}
-
-#root,
-header,
-section,
-footer {
-    display: block;
-    float: left;
-    width: 100%;
-}
-
-section {
-    padding: 4rem 0;
-    margin: 0;
-
-    @media(max-width:350px){
-        padding: 2.5rem 0;
-    }
-}
-
-.container {
-    display: flex;
-    flex-flow: column;
-    margin: 0 auto;
-    max-width: 90vw;
-}
 
 @import 'animations';
-@import 'grid';
 @import 'header';
 @import 'sobre';
 @import 'produtos';
-@import 'vitrine';
-@import 'steps';
 @import 'footer';
-@import 'modal';
-@import 'modal-desc'
