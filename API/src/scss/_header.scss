@@ -5,4 +5,20 @@ header .container {
     justify-content: space-around;
     align-items: center;
     height: 150px;
+
+    .nav{
+        
+        &__menu{
+            font-family: var(--font);
+            display: flex;
+            width: 50%;
+            max-width: 600px;
+            gap: 80px;
+            &__itens{
+                list-style: none;
+                font-size: 14px;
+                line-height: 17px;
+            }    
+        }
+    }
 }

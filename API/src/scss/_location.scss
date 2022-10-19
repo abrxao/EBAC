@@ -1,0 +1,32 @@
+#location .container{
+    position: relative;
+    .ballDec{
+        position: absolute;
+        left: -202px;
+        width: 673px;
+        aspect-ratio: 1;
+        border-radius: 50%;
+        background-color: var(--color-blue);
+        opacity: .2;
+    }
+    .loc{
+        display: flex;
+        flex-direction: column;
+        gap: 42px;
+        &__title{
+            text-align: center;
+            font-size: 48px;
+            line-height: 58px;
+            font-weight: 700;
+        }
+        &__desc{
+            font-size: 36px;
+            line-height: 43px;
+            text-align: center;            
+        }
+        &_maps{
+            
+        }
+    }
+
+}

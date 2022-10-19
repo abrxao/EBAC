@@ -1,9 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+
 :root{
+    --font:'Montserrat', sans-serif;
     --color:#e8e8e8;
     --color-gray:#888;
     --bg-color:#2d2d2d;
     --bg-color-hover:#323232;
-    --neoSdw1:#aaaaaa2f;
+    --color-blue:#0074FF;
     --neoSdw2:#00000099;
     --placeholder: #444;
     --invSdw1:#FF8870;
@@ -31,6 +34,10 @@
     margin: 0px;
 }
 
+body *{
+    font-family: var(--font);
+}
+
 body{
     width: 100%;
 }
@@ -38,5 +45,5 @@ body{
 @import 'animations';
 @import 'header';
 @import 'sobre';
-@import 'produtos';
+@import 'location';
 @import 'footer';
