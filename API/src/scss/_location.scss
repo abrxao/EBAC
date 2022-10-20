@@ -31,6 +31,8 @@
             margin-top: 30px;
             box-shadow: 0px 0px 10px 3px var(--color-gray);
             background-color: var(--bg-color);
+            border-radius: 10px;
+            overflow: hidden;
             width: 975px;
             height: 450px;
             display: flex;
@@ -42,11 +44,13 @@
                 font-size: 20px;
             }
             iframe{
+                border-radius: 10px;
+                overflow: hidden;
                 background-color: var(--color-gray);
                 display: none;
             }
         }
-
+        
         &__linedec{
             width: 315px;
             height: 3px;
@@ -54,5 +58,5 @@
             background-color: #000;
         }
     }
-
+    
 }

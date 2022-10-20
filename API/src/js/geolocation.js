@@ -11,6 +11,6 @@ function showLocation(position){
     const url = `https://maps.google.com/maps?q=${lat},${long}&t=&z=16&ie=UTF8&iwloc=&output=embed`;
 
     blockMaps.setAttribute('src', url);
-    mapsTitle.parentNode.removeChild(mapsTitle);
+    mapsTitle.innerHTML = '';
     blockMaps.style.display = 'block';
 }

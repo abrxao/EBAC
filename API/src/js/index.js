@@ -1,2 +1,3 @@
 import '../scss/styles.scss'
-import './custom.js'
+import './geolocation.js'
+import './notify.js'
