@@ -8,7 +8,7 @@ function getNotifyPermission(){
     else if ( Notification.permission !== "denied") {
         Notification.requestPermission( function(permission){
             if(permission === "granted"){
-                const notify = new Notification('Agora você ficara por dentro de todas as nossas atualizações ;)');
+                const notify = new Notification('Agora você ficará por dentro de todas as nossas atualizações ;)');
             }
         })
     }
