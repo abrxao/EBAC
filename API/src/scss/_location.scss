@@ -38,10 +38,60 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            &__title{
-                color: var(--color);
-                text-align: center;
-                font-size: 20px;
+            
+            &__wait{
+                display: flex;
+                flex-direction: column;
+                gap: 30px;
+                align-items: center;
+                justify-content: center;
+                &__title{
+                    color: var(--color);
+                    text-align: center;
+                    font-size: 20px;
+                }
+                &__permission{
+                    position: relative;
+                    overflow: hidden;
+                    font-size: 18px;
+                    font-weight: 600;
+                    padding: 15px 30px;
+                    cursor: pointer;
+                    background: #fff0;
+                    border:1px solid var(--color-blue);
+                    color: var(--color-blue);
+                    transition: all .2s;
+                    span{
+                        z-index: 0;
+                        top: 0;
+                        left: -3%;
+                        position: absolute;
+                        width: 10px;
+                        height: 100%;
+                        background-color: var(--color-blue);
+                        transform: skew(-45deg);
+                        transition: .6s;
+                        opacity: .2;
+                        &:nth-child(1){
+                            left: 100%;
+                        }
+                    }
+                    &:hover{
+                        padding: 18px 33px;
+                        font-size: 20px;
+                        
+                        span{
+                            opacity: 1;
+                            left: 93.1%;
+                            transform: skew(-15deg);
+                            &:nth-child(1){
+                                transform: skew(15deg);
+                                left: 3%;
+                            }
+                        } 
+                    } 
+                    
+                }
             }
             iframe{
                 border-radius: 10px;
