@@ -1,0 +1,63 @@
+.serviceBlock {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+
+    &__ballDec{
+        width: 673px;
+        aspect-ratio: 1/1;
+        border: 5px solid var(--color-blue);
+        opacity: 20%;
+        border-radius: 50%;
+        position: absolute;
+        z-index: -1;
+        right: -110px;
+    }
+
+    &__text {
+        text-align: center;
+        width: 67%;
+        &__title{
+            font-size: 48px;
+            margin-top: 232px;
+            margin-bottom: 42px;
+        }
+        &__desc{
+            font-size: 38px;
+        }
+    }
+
+    &__itens{
+        margin-top: 77px;
+        display: flex;
+        align-items: center;
+        gap: 13px;
+        &__item{
+            width: 309px;
+            height: 448px;
+            background-color: var(--color-blue);
+            
+            *{
+                color: #fff;
+            }
+
+            &__index{
+                position: absolute;
+                font-size: 144px;
+                color: #1a1a1a16;
+            }
+            &__title{
+                font-size: 36px;
+                margin: 105px 0px 70px 45px ;
+
+            }
+            &__desc{
+                font-size: 18px;
+                width: 280px;
+                margin-left: 22px;
+            }
+        }
+    }
+}
