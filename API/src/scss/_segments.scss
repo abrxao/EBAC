@@ -1,0 +1,54 @@
+.segmentsBlock{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    margin-bottom: 230px;
+    &__text{
+        text-align: center;
+        width: 60%;
+        margin-top: 221px;
+        &__title{
+            font-size: 48px;
+            margin-bottom: 42px;
+        }
+        &__desc{
+            font-size: 38px;
+            margin-bottom: 72px;
+        }
+    }
+    
+    &__itens{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 80px 201px ;
+        &__item{
+            width: 395px;
+            &__img{
+                display: flex;
+                align-items: flex-end;
+                width: 57px;
+                height: 109px;
+                border: 1px solid #000;
+                border-top: #fff0 ;
+                border-left: #fff0;
+                
+                img{
+                    margin-bottom: 28px;
+                }
+            }
+            
+            &__title{
+                margin: -24px 0px 15px 74px;
+                font-weight: 600;
+                font-size: 24px;                
+            }
+            &__desc{
+                margin-left: 74px;
+                font-size: 18px;
+            }
+            
+        }
+    }
+}
