@@ -24,9 +24,9 @@
     &__itens{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        gap: calc(2.5vw + 3vh) calc(5.2vw + 7vh) ;
+        gap: calc(2.5vw + 3vh) calc(5.2vw + 2vh) ;
         &__item{
-            width: calc(15vw + 11.7vh);
+            width: calc(18vw + 10vh);
             &__img{
                 display: flex;
                 align-items: flex-end;

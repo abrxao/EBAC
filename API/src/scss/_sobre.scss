@@ -1,7 +1,7 @@
 #sobre .container{
     display: flex;
     align-items: flex-start;
-    margin-top: 80px;
+    margin-top: calc(2.7vw + 1.3vh);
     width: 100vw;
     overflow: hidden;
 
@@ -38,7 +38,7 @@
             color: #595959;
         }
         &__notification{
-            font-size: calc(.6vw + 1.4vh);
+            font-size: 22px;
             font-family: var(--font);
             background-color: #fff0;
             color: var(--color-blue);
