@@ -1,11 +1,22 @@
-footer .container{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background-color: #1a1a1a;
-    height: 150px;
-    .footerDesc{
-        color: #fff;
-        font-size: 14px;
+
+footer {
+    width: 100vw;
+    .container{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #1a1a1a;
+        padding: 0 calc(6vw + 10vh);
+        height: 150px;
+
+        .imgFooter img{
+            width: calc(5vw + 10vh);
+        }
+
+        .footerDesc{
+            color: #fff;
+            font-size: calc(.4vh + .5vw);
+        }
     }
 }

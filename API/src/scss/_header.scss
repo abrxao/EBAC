@@ -1,32 +1,40 @@
 
 header .container {
-    width: 100%;
+    padding:  0 calc(3vw + 3vh);
+    width: 100vw;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     height: 150px;
+    
     .imgLogo{
-        margin-left: 50px;
-        margin-right: 250px;
+        padding-left: calc(6.2vw + 1vh);
+        width: 25%;
+        @media (max-width:1366px){
+
+        }
     }
     .nav{
-        margin-left: 290px;
         &__menu{
             font-family: var(--font);
             display: flex;
-            gap: 142px;
             &__itens{
                 list-style: none;
-                font-size: 14px;
-                line-height: 17px;
+                width: 11vw;
+                min-width: 120px;
+                text-align: center;
                 &:nth-child(1){
                     font-weight: 700;
                 }
                 a{
+                    font-size: 1em;
                     text-decoration: none;
                     color: #000;
                 }
             }    
         }
+    }
+
+    @media (max-width:1366px){
     }
 }

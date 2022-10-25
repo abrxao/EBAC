@@ -4,39 +4,43 @@
     justify-content: center;
     flex-direction: column;
     position: relative;
+    padding-left: calc(1vw + 1vh);
+    overflow: hidden;
+    width: 100vw;
 
     &__ballDec{
-        width: 673px;
+        width: calc(30vh + 21vw);
         aspect-ratio: 1/1;
         border: 5px solid var(--color-blue);
         opacity: 20%;
         border-radius: 50%;
         position: absolute;
         z-index: -1;
-        right: -110px;
+        right: calc(-19vw - 10vh);
     }
 
     &__text {
         text-align: center;
-        width: 67%;
+        width: calc(45vh + 45vw);
         &__title{
-            font-size: 48px;
-            margin-top: 232px;
-            margin-bottom: 42px;
+            font-size: calc(1.7vh + 1.7vw);
+            margin-top: calc(9vw + 6vh);
+            margin-bottom: calc(1.3vw + 3vh);
         }
         &__desc{
-            font-size: 38px;
+            font-size: calc(1.3vw + 1.2vh);
         }
     }
 
     &__itens{
-        margin-top: 77px;
+        margin-top: calc(2.2vw + 2vh);
         display: flex;
         align-items: center;
-        gap: 13px;
+        gap: calc(.5vw + .6vh);
         &__item{
-            width: 309px;
-            height: 448px;
+            width: calc(12vw + 8vh);
+            position: relative;
+            aspect-ratio: .68;
             background-color: var(--color-blue);
             
             *{
@@ -45,17 +49,18 @@
 
             &__index{
                 position: absolute;
-                font-size: 144px;
+                left: calc(1.5vh);
+                font-size: calc(4vw + 8vh);
                 color: #1a1a1a16;
             }
             &__title{
-                font-size: 36px;
-                margin: 105px 0px 70px 45px ;
+                font-size: calc(1.5vh + 1.11vw);
+                margin: calc(4vw + 4vh) 0px calc(2vw + 3vh) calc(2vw + 1vh) ;
 
             }
             &__desc{
-                font-size: 18px;
-                width: 280px;
+                font-size: calc(.6vh + .6vw);
+                width: 90%;
                 margin-left: 22px;
             }
         }

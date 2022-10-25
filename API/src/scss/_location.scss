@@ -1,11 +1,17 @@
 #location .container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
     position: relative;
-    margin-top: 6%;
+    margin-top: 5%;
+    padding-left: calc(1vw + 1vh);
+    width: 100vw;
     .ballDec{
         position: absolute;
-        left: -202px;
-        top: -75px;
-        width: 673px;
+        left: calc(-5vh - 6.8vw);
+        top: calc(-1vh - 1vw);
+        width: calc(30vh + 21vw);
         aspect-ratio: 1;
         border-radius: 50%;
         background-color: var(--color-blue);
@@ -16,26 +22,29 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 42px;
+        gap: 2.5vw;
         &__title{
             text-align: center;
-            font-size: 48px;
-            line-height: 58px;
+            font-size: calc(2vw + 1vh);
+            line-height: calc(2.2vw + 1.1vh);
             font-weight: 700;
         }
         &__desc{
-            font-size: 36px;
-            line-height: 43px;
+            width: 68%;
+            font-size: calc(1.5vw + 1.1vh);
+            line-height: calc(1.5vw + 1.6vh);
             text-align: center;            
         }
         &__maps{
-            margin-top: 30px;
+            margin-top: 1.7vw;
             box-shadow: 0px 0px 10px 3px var(--color-gray);
             background-color: var(--bg-color);
             border-radius: 10px;
+            margin-left: -2vw;
             overflow: hidden;
-            width: 975px;
-            height: 494px;
+            width: calc(54vw + 28vh);
+            max-width: 968px;
+            aspect-ratio: 1.9;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -95,7 +104,8 @@
                 }
             }
             iframe{
-                border-radius: 10px;
+                width: calc(78vw + 28vh);
+                aspect-ratio: 1.9;
                 overflow: hidden;
                 background-color: var(--color-gray);
                 display: none;
@@ -104,8 +114,8 @@
         
         &__linedec{
             width: 315px;
-            height: 3px;
-            margin: 40px;
+            height: 2px;
+            margin: 1.5vw;
             background-color: #000;
         }
     }

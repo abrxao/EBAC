@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
 
+
 :root{
     --font:'Montserrat', sans-serif;
     --color:#e8e8e8;
@@ -27,7 +28,6 @@
     --swt-text: 'to dark';
 }
 
-@import 'nav';
 * {
     padding: 0px;
     box-sizing: border-box;
@@ -40,6 +40,11 @@ body *{
 
 body{
     width: 100%;
+    overflow-x: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 @import 'animations';

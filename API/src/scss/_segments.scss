@@ -4,49 +4,53 @@
     justify-content: center;
     flex-direction: column;
     position: relative;
-    margin-bottom: 230px;
+    margin-bottom: calc(10vw + 10vh);
+    transition: all 1s;
+    width: 100vw;
     &__text{
         text-align: center;
-        width: 60%;
-        margin-top: 221px;
+        width:calc(50vw + 30vh);
+        margin-top: calc(8vw + 10vh);
         &__title{
-            font-size: 48px;
-            margin-bottom: 42px;
+            font-size: calc(1.6vw + 1.8vh);
+            margin-bottom: calc(1.5vw + 1.5vh);
         }
         &__desc{
-            font-size: 38px;
-            margin-bottom: 72px;
+            font-size: calc(1.2vw + 1.38vh);
+            margin-bottom: calc(2.5vw + 2.9vh);
         }
     }
     
     &__itens{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        gap: 80px 201px ;
+        gap: calc(2.5vw + 3vh) calc(5.2vw + 7vh) ;
         &__item{
-            width: 395px;
+            width: calc(15vw + 11.7vh);
             &__img{
                 display: flex;
                 align-items: flex-end;
-                width: 57px;
-                height: 109px;
+                width: calc(2vw + 2.3vh);
+                aspect-ratio: .54;
                 border: 1px solid #000;
                 border-top: #fff0 ;
                 border-left: #fff0;
                 
                 img{
-                    margin-bottom: 28px;
+                    width: 90%;
+                    aspect-ratio: 1;
+                    margin-bottom: calc(1vh + .8vw);
                 }
             }
             
             &__title{
-                margin: -24px 0px 15px 74px;
+                margin: calc(-1vh - .8vw) 0px calc(.5vh + .8vw) calc(4vh + 1.9vw);
                 font-weight: 600;
-                font-size: 24px;                
+                font-size: calc(1vh + .8vw);                
             }
             &__desc{
-                margin-left: 74px;
-                font-size: 18px;
+                margin-left: calc(4vh + 1.9vw);
+                font-size: calc(1vh + .4vw);
             }
             
         }
