@@ -15,7 +15,7 @@ function changeTheme(e) {
 prefersColorScheme.addListener(changeTheme);
 
 const url_reqes="https://reqres.in/api/users?delay=1.5";
-const perfis= document.querySelector('#perfil');
+const perfis = document.querySelector('#perfil');
 var cards='';
 
 fetch(url_reqes)
